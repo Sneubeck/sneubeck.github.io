@@ -517,3 +517,103 @@ section[id]{scroll-margin-top:20px}
   bottom:2px;
  }
 }
+
+/* FIELD-JOURNAL REFINEMENT: restrained overgrowth, stable photo placement, and cohesive footer */
+/* The small portrait is anchored to the photo arrangement at every width.
+   The older general .photo-placeholder rule reset position:relative and defeated
+   the earlier .photo-small absolute positioning. */
+.hero .hero-photo-column{position:relative;isolation:isolate;overflow:visible}
+.hero .hero-photo-column > .photo-placeholder.photo-small{
+  position:absolute!important;
+  float:none;
+  left:auto!important;
+  right:0!important;
+  top:auto!important;
+  bottom:12px!important;
+  width:clamp(128px,41%,190px);
+  min-height:145px;
+  margin:0;
+  transform:rotate(5deg);
+  z-index:8;
+}
+.hero .hero-photo-column > .photo-placeholder:not(.photo-small){position:relative;z-index:2}
+.hero .hero-photo-column .photo-small .photo-tape{z-index:12}
+/* A warm binding/endpaper after the ink-dark contact panel; readable contrast. */
+.site-footer{
+  background-color:#e7ddc8;
+  background-image:none;
+  color:var(--ink);
+  border-top:1px solid rgba(38,60,53,.20);
+  align-items:center;
+}
+.site-footer a{
+  color:#854531;
+  text-decoration-color:rgba(133,69,49,.5);
+  text-decoration-thickness:1px;
+}
+.site-footer a:hover,.site-footer a:focus-visible{color:var(--ink)}
+/* The contact chapter stays legible against its forest-green paper. */
+.contact-band{color:var(--white)}
+.contact-band .contact-annotation{color:rgba(255,250,240,.75)}
+.contact-band .contact-actions small{color:rgba(255,250,240,.80)}
+.contact-band .btn.secondary{color:var(--ink);background:var(--cream);border-color:var(--cream)}
+.contact-band .btn.secondary:hover{background:var(--white)}
+/* Quiet, wandering marginal growth instead of sticker-like plant clip art:
+   low-contrast stem curves and small pressed-leaf silhouettes only at edges. */
+.about-section,.resume-section,.writing-section{isolation:isolate;overflow:clip}
+.about-section::before,
+.resume-section::before,
+.writing-section::before{
+  content:"";
+  display:block;
+  position:absolute;
+  pointer-events:none;
+  z-index:0;
+  width:148px;
+  height:255px;
+  opacity:.30;
+  border-left:2px solid rgba(75,100,71,.42);
+  border-radius:60% 0 0 45%;
+  transform:rotate(-15deg);
+  background:
+    radial-gradient(ellipse 17px 38px at 39px 62px,rgba(103,129,88,.25) 0 82%,transparent 86%),
+    radial-gradient(ellipse 13px 29px at 11px 117px,rgba(103,129,88,.24) 0 82%,transparent 86%),
+    radial-gradient(ellipse 18px 31px at 42px 178px,rgba(103,129,88,.23) 0 82%,transparent 86%);
+}
+.about-section::before{left:-45px;bottom:8%}
+.resume-section::before{right:-48px;top:11%;transform:scaleX(-1) rotate(-12deg);opacity:.25}
+.writing-section::before{left:-52px;bottom:11%;transform:rotate(7deg);opacity:.26}
+.about-section .about-grid,
+.resume-section .resume-document,
+.resume-section .section-heading,
+.resume-section .education,
+.writing-section .section-heading,
+.writing-section .writing-intro,
+.writing-section .filter-bar,
+.writing-section .writing-list,
+.writing-section .archive-header{position:relative;z-index:2}
+/* Make wandering insects read as marginalia, not foreground obstructions. */
+.about-section .bug-about-ladybug{z-index:3}
+.resume-section .bug-resume-dragonfly,.resume-section .bug-resume-scarab{z-index:1;opacity:.65}
+.writing-section .bug-writing-leaf,.writing-section .bug-writing-butterfly{z-index:1;opacity:.70}
+@media(max-width:900px){
+ .hero .hero-photo-column > .photo-placeholder.photo-small{
+  width:clamp(128px,41%,175px);
+  right:0!important;
+  bottom:10px!important;
+  min-height:125px;
+ }
+}
+@media(max-width:600px){
+ .hero .hero-photo-column > .photo-placeholder.photo-small{
+  position:absolute!important;
+  left:auto!important;
+  right:0!important;
+  top:auto!important;
+  bottom:2px!important;
+  width:41%;
+  min-height:110px;
+ }
+ .about-section::before,.resume-section::before,.writing-section::before{opacity:.15;width:105px;height:185px}
+ .site-footer{line-height:1.6}
+}
