@@ -1,11 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Cicada"><title>Cicada</title>
-<path d="M108 107 Q51 20 22 49 Q3 81 94 160 Z" fill="#D8C6B3" stroke="#263C35" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M132 107 Q189 20 218 49 Q237 81 146 160 Z" fill="#D8C6B3" stroke="#263C35" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M39 73 Q72 94 98 140 M201 73 Q168 94 142 140 M54 62 L86 111 M186 62 L154 111" fill="none" stroke="#263C35" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M110 127 Q41 131 49 199 Q86 212 115 162 Z" fill="#F7F1E5" stroke="#263C35" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M130 127 Q199 131 191 199 Q154 212 125 162 Z" fill="#F7F1E5" stroke="#263C35" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
-<ellipse cx="120" cy="143" rx="23" ry="66" fill="#738D68" stroke="#263C35" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" />
-<ellipse cx="120" cy="90" rx="33" ry="26" fill="#A8B59B" stroke="#263C35" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" />
-<circle cx="98" cy="86" r="6" fill="#263C35" stroke="#263C35" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="142" cy="86" r="6" fill="#263C35" stroke="#263C35" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M109 68 L99 51 M131 68 L141 51 M108 162 H132 M111 181 H129" fill="none" stroke="#263C35" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Cicada"><title>Cicada</title>
+<path fill="#F7F1E5" d="M246 186 C197 102 69 49 31 92 C-14 139 64 243 215 329Z"/>
+<path fill="#D8C6B3" d="M266 186 C315 102 443 49 481 92 C526 139 448 243 297 329Z"/>
+<path fill="#79B8B2" d="M218 296 C140 224 82 166 55 117 C123 119 177 180 228 244Z"/>
+<path fill="#A8B59B" d="M294 296 C372 224 430 166 457 117 C389 119 335 180 284 244Z"/>
+<path fill="#D8C6B3" d="M243 237 C161 247 88 315 121 369 C159 418 213 371 249 319Z"/>
+<path fill="#F7F1E5" d="M269 237 C351 247 424 315 391 369 C353 418 299 371 263 319Z"/>
+<path fill="#79B8B2" d="M226 266 C185 300 154 330 151 367 C176 379 201 352 230 307Z"/>
+<path fill="#79B8B2" d="M286 266 C327 300 358 330 361 367 C336 379 311 352 282 307Z"/>
+<ellipse cx="256" cy="288" rx="49" ry="139" fill="#738D68" />
+<path fill="#A8B59B" d="M256 177 C293 210 302 309 256 411Z"/>
+<ellipse cx="256" cy="180" rx="82" ry="62" fill="#4E5A51" />
+<ellipse cx="256" cy="162" rx="66" ry="44" fill="#8A6B60" />
+<circle cx="188" cy="158" r="17" fill="#263C35"/><circle cx="324" cy="158" r="17" fill="#263C35"/>
+<circle cx="187" cy="152" r="7" fill="#F7F1E5"/><circle cx="323" cy="152" r="7" fill="#F7F1E5"/>
+<path fill="#4E5A51" d="M237 421 L256 464 L275 421Z"/>
 </svg>

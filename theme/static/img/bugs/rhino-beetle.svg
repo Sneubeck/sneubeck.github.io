@@ -1,9 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Rhinoceros beetle"><title>Rhinoceros beetle</title>
-<path d="M93 102 L55 81 M90 137 L51 146 M91 169 L63 206 M147 102 L185 81 M150 137 L189 146 M148 169 L176 206" fill="none" stroke="#263C35" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
-<ellipse cx="120" cy="143" rx="58" ry="75" fill="#C4664B" stroke="#263C35" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" />
-<path d="M120 91 C90 94 62 117 64 149 C70 189 89 214 120 217 Z" fill="#DE9875" stroke="#263C35" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M120 91 V215" fill="none" stroke="#263C35" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
-<ellipse cx="120" cy="77" rx="35" ry="29" fill="#8F695A" stroke="#263C35" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" />
-<path d="M110 58 C102 39 100 22 115 13 C114 35 121 44 131 49 C134 34 137 30 147 21 C146 50 142 63 133 67 Z" fill="#263C35" stroke="#263C35" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M89 64 L72 48 M151 65 L168 49" fill="none" stroke="#263C35" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Rhinoceros beetle"><title>Rhinoceros beetle</title>
+<g transform="translate(256 185) scale(1 1)"><path fill="#4E5A51" d="M-70 -8 C-119 -23-159 -10-178 17 C-197 31-208 61-209 71 C-193 79-186 47-168 38 C-143 20-114 27-66 9Z"/></g><g transform="translate(256 185) scale(-1 1)"><path fill="#4E5A51" d="M-70 -8 C-119 -23-159 -10-178 17 C-197 31-208 61-209 71 C-193 79-186 47-168 38 C-143 20-114 27-66 9Z"/></g><g transform="translate(256 265) scale(1 1)"><path fill="#4E5A51" d="M-70 -8 C-119 -23-159 -10-178 17 C-197 31-208 61-209 71 C-193 79-186 47-168 38 C-143 20-114 27-66 9Z"/></g><g transform="translate(256 265) scale(-1 1)"><path fill="#4E5A51" d="M-70 -8 C-119 -23-159 -10-178 17 C-197 31-208 61-209 71 C-193 79-186 47-168 38 C-143 20-114 27-66 9Z"/></g><g transform="translate(256 330) scale(1 1)"><path fill="#4E5A51" d="M-70 -8 C-119 -23-159 -10-178 32 C-197 46-208 76-209 86 C-193 94-186 62-168 53 C-143 35-114 42-66 9Z"/></g><g transform="translate(256 330) scale(-1 1)"><path fill="#4E5A51" d="M-70 -8 C-119 -23-159 -10-178 32 C-197 46-208 76-209 86 C-193 94-186 62-168 53 C-143 35-114 42-66 9Z"/></g>
+<ellipse cx="256" cy="292" rx="114" ry="157" fill="#263C35" />
+<path fill="#C4664B" d="M256 147 C187 146 147 189 146 275 C142 362 187 434 256 444 Z"/>
+<path fill="#D98967" d="M256 147 C325 146 365 189 366 275 C370 362 325 434 256 444 Z"/>
+<path fill="#E8B95F" d="M174 224 C154 271 176 360 220 397 C189 371 175 301 190 250 Z"/>
+<path fill="#C4664B" d="M330 224 C350 271 328 360 284 397 C315 371 329 301 314 250 Z"/>
+<path fill="#263C35" d="M251 148 L261 148 L262 444 L252 444Z"/>
+<ellipse cx="256" cy="163" rx="83" ry="76" fill="#4E5A51" />
+<path fill="#263C35" d="M230 118 C201 65 219 24 259 20 C281 47 281 88 273 121 C308 98 324 67 338 53 C345 114 310 163 276 173 Z"/>
+<path fill="#4E5A51" d="M237 115 C234 80 237 57 254 38 C263 63 261 94 257 115Z"/>
+<circle cx="196" cy="155" r="8" fill="#F7F1E5"/><circle cx="316" cy="155" r="8" fill="#F7F1E5"/>
 </svg>
