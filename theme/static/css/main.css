@@ -313,31 +313,128 @@ section[id]{scroll-margin-top:20px}
 .writing-section .archive-note{position:relative;z-index:5}
 .writing-section .writing-row:hover,
 .writing-section .writing-row:focus-visible{background-color:rgba(247,241,229,.84)}
-
-/* VINTAGE FIELD NOTES: distinct neighboring paper surfaces and quiet specimen plate. */
-.hero{background-color:var(--cream);background-image:radial-gradient(rgba(79,67,45,.055) .5px,transparent .75px);background-size:7px 7px;overflow:hidden}
-.about-section{background-color:var(--white);background-image:linear-gradient(90deg,transparent 96%,rgba(38,60,53,.035) 96%);background-size:32px 32px}
-.resume-section{background-color:var(--sage);background-image:none!important;border:0}
+/* Field journal itself is the canvas. Alternate quiet paper treatments. */
+.hero{
+  background-color:var(--cream);
+  background-image:radial-gradient(rgba(79,67,45,.055) .5px,transparent .75px);
+  background-size:7px 7px;
+  overflow:hidden;
+}
+.about-section{
+  background-color:var(--white);
+  background-image:linear-gradient(90deg,transparent 96%,rgba(38,60,53,.035) 96%);
+  background-size:32px 32px;
+}
+.resume-section{
+  background-color:#eee7d8;
+  background-image:none!important;
+  border:0;
+}
 .resume-section .skills,.resume-section .education{background-color:transparent!important;background-image:none!important}
-.writing-section{background-color:var(--cream);background-image:radial-gradient(rgba(79,67,45,.055) .5px,transparent .75px);background-size:7px 7px;border:0;box-shadow:none}
+.writing-section{
+  background-color:var(--cream);
+  background-image:radial-gradient(rgba(79,67,45,.055) .5px,transparent .75px);
+  background-size:7px 7px;
+  border:0;
+  box-shadow:none;
+}
 .contact-band{background-color:var(--ink);background-image:none}
-.hero .art.specimen-art{position:relative;isolation:isolate;overflow:visible;height:490px;width:100%;min-width:0;background-color:#f4eddd;background-image:linear-gradient(90deg,transparent 55px,rgba(196,102,75,.22) 56px,transparent 57px),repeating-linear-gradient(0deg,transparent 0,transparent 31px,rgba(38,60,53,.055) 32px);border:1px solid rgba(38,60,53,.28);box-shadow:10px 13px 0 rgba(38,60,53,.07);transform:rotate(1.6deg)}
-.hero .art.specimen-art::before,.hero .art.specimen-art::after{content:none!important;display:none!important}
-.hero .art.specimen-art .plate-header,.hero .art.specimen-art .plate-footer{position:absolute;left:19px;right:19px;display:flex;justify-content:space-between;gap:10px;font-size:10px;font-weight:700;letter-spacing:.11em;color:var(--ink);z-index:5}
-.hero .art.specimen-art .plate-header{top:18px;border-bottom:1px solid rgba(38,60,53,.35);padding-bottom:12px}
-.hero .art.specimen-art .plate-footer{bottom:16px;border-top:1px solid rgba(38,60,53,.32);padding-top:10px;font-size:9px}
-.hero .art.specimen-art .plate-figure{position:absolute;z-index:2}
-.hero .art.specimen-art .figure-beetle{left:13%;top:18%;width:49%;height:62%}
-.hero .art.specimen-art .figure-butterfly{right:7%;top:14%;width:32%;height:43%}
-.hero .art.specimen-art .specimen-insect{display:block;position:absolute;max-width:none;pointer-events:none;user-select:none;object-fit:contain;filter:none}
-.hero .art.specimen-art .specimen-stag{width:85%;height:85%;left:8%;top:8%;transform:rotate(-12deg)}
-.hero .art.specimen-art .specimen-butterfly{width:100%;height:86%;left:0;top:0;transform:rotate(19deg)}
-.hero .art.specimen-art .specimen-visitor{width:18%;height:18%;right:9%;bottom:19%;transform:rotate(-24deg);z-index:4}
-.hero .art.specimen-art .figure-number{position:absolute;left:0;top:0;font-family:'Fraunces',Georgia,serif;font-size:21px;color:var(--rust);line-height:1;z-index:5}
-.hero .art.specimen-art .figure-annotation{position:absolute;z-index:5;font-family:'Fraunces',Georgia,serif;font-size:14px;font-style:italic;color:var(--ink);line-height:1.2}
-.hero .art.specimen-art .figure-annotation small{display:block;font-family:'DM Sans',Arial,sans-serif;font-size:9px;font-style:normal;letter-spacing:.06em;text-transform:uppercase;margin-top:4px}
-.hero .art.specimen-art .beetle-annotation{left:10%;bottom:-6%}
-.hero .art.specimen-art .butterfly-annotation{right:-3%;bottom:-8%}
-.hero .art.specimen-art .plate-side-note{position:absolute;right:11%;bottom:11%;width:32%;font-family:'Fraunces',Georgia,serif;font-style:italic;font-size:15px;line-height:1.3;transform:rotate(-6deg);color:var(--olive);z-index:3}
-@media(max-width:900px){.hero .art.specimen-art{max-width:490px;height:440px;transform:rotate(.9deg);margin:32px auto 5px}.hero .art.specimen-art .figure-beetle{left:15%;top:18%}}
-@media(max-width:600px){.hero .art.specimen-art{height:315px;margin:25px auto 5px}.hero .art.specimen-art .plate-header{left:13px;right:13px;top:12px;font-size:8px;padding-bottom:8px}.hero .art.specimen-art .plate-footer{left:13px;right:13px;bottom:9px;font-size:7px;padding-top:7px}.hero .art.specimen-art .figure-beetle{left:12%;top:19%;width:51%;height:57%}.hero .art.specimen-art .figure-butterfly{right:6%;top:17%;width:32%;height:41%}.hero .art.specimen-art .figure-number{font-size:15px}.hero .art.specimen-art .figure-annotation{font-size:11px}.hero .art.specimen-art .figure-annotation small{font-size:7px}.hero .art.specimen-art .specimen-visitor{width:16%;height:16%;right:8%;bottom:17%}.hero .art.specimen-art .plate-side-note{font-size:10px;right:10%;bottom:11%}}
+/* Open, slightly eccentric natural-history marginalia—no second page or frame. */
+.hero .art.naturalist-vignette{
+  position:relative;
+  isolation:isolate;
+  width:100%;
+  min-width:0;
+  height:490px;
+  border:0;
+  background:transparent;
+  background-image:none;
+  box-shadow:none;
+  transform:none;
+  overflow:visible;
+}
+.hero .art.naturalist-vignette::before,
+.hero .art.naturalist-vignette::after{display:none!important;content:none!important}
+.naturalist-vignette .vignette-wash{
+  position:absolute;
+  display:block;
+  pointer-events:none;
+  border-radius:54% 46% 60% 40%/48% 62% 38% 52%;
+  z-index:0;
+}
+.naturalist-vignette .wash-one{
+  left:11%;top:12%;width:68%;height:73%;
+  background:rgba(168,181,155,.18);
+  transform:rotate(-18deg);
+}
+.naturalist-vignette .wash-two{
+  right:5%;bottom:12%;width:32%;height:38%;
+  background:rgba(232,185,95,.12);
+  transform:rotate(24deg);
+}
+.naturalist-vignette .vignette-orbit{
+  position:absolute;z-index:1;
+  border:1px dashed rgba(38,60,53,.23);
+  border-radius:50%;
+  pointer-events:none;
+}
+.naturalist-vignette .orbit-one{
+  left:9%;top:18%;width:62%;height:59%;
+  transform:rotate(-18deg);
+  border-right-color:transparent;border-bottom-color:transparent;
+}
+.naturalist-vignette .orbit-two{
+  right:13%;top:8%;width:35%;height:44%;
+  transform:rotate(32deg);
+  border-left-color:transparent;border-top-color:transparent;
+}
+.naturalist-vignette .vignette-insect{
+  position:absolute;
+  display:block;
+  object-fit:contain;
+  max-width:none;
+  pointer-events:none;
+  user-select:none;
+  filter:none;
+  z-index:3;
+}
+.naturalist-vignette .vignette-beetle{
+  width:46%;height:72%;left:16%;top:17%;transform:rotate(-16deg);
+}
+.naturalist-vignette .vignette-butterfly{
+  width:34%;height:46%;right:7%;top:8%;transform:rotate(23deg);
+}
+.naturalist-vignette .vignette-leaf{
+  width:18%;height:24%;right:7%;bottom:13%;transform:rotate(-29deg);
+}
+.naturalist-vignette .vignette-annotation{
+  position:absolute;
+  z-index:4;
+  color:rgba(38,60,53,.72);
+  font-family:'DM Sans',Arial,sans-serif;
+  font-size:10px;
+  letter-spacing:.10em;
+  line-height:1.4;
+  pointer-events:none;
+}
+.naturalist-vignette .note-beetle{left:9%;bottom:12%;transform:rotate(-5deg)}
+.naturalist-vignette .note-butterfly{right:10%;top:5%;transform:rotate(5deg)}
+.naturalist-vignette .note-margin{
+  right:12%;bottom:9%;
+  font-family:'Fraunces',Georgia,serif;
+  font-style:italic;
+  font-size:14px;
+  letter-spacing:0;
+  transform:rotate(-8deg);
+}
+@media(max-width:900px){
+ .hero .art.naturalist-vignette{max-width:480px;height:400px;margin:0 auto}
+}
+@media(max-width:600px){
+ .hero .art.naturalist-vignette{height:285px;margin:0 auto}
+ .naturalist-vignette .vignette-beetle{width:48%;height:73%;left:15%;top:15%}
+ .naturalist-vignette .vignette-butterfly{width:33%;height:46%;right:7%;top:6%}
+ .naturalist-vignette .vignette-leaf{width:17%;height:24%;right:8%;bottom:11%}
+ .naturalist-vignette .vignette-annotation{font-size:8px}
+ .naturalist-vignette .note-margin{font-size:10px;right:9%;bottom:5%}
+}
