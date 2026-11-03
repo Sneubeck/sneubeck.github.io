@@ -502,3 +502,18 @@ section[id]{scroll-margin-top:20px}
  .about-vignette .note-beetle{left:10%;bottom:11%}
  .about-vignette .note-butterfly{right:8%;top:6%}
 }
+
+/* Photo pair: anchor the smaller image to the lower-right corner. */
+.hero .hero-photo-column .photo-small{
+ left:auto;
+ right:-7px;
+ bottom:7px;
+ transform:rotate(6deg);
+}
+@media(max-width:600px){
+ .hero .hero-photo-column .photo-small{
+  left:auto;
+  right:-5px;
+  bottom:2px;
+ }
+}
