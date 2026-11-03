@@ -655,3 +655,61 @@ section[id]{scroll-margin-top:20px}
  
  .site-footer{line-height:1.6}
 }
+
+/* Pressed botanical vectors: same limited flat-fill palette as the original insect SVGs.
+   Replace provisional CSS-drawn foliage, leaving typography unobstructed. */
+.about-section::before,
+.resume-section::before,
+.writing-section::before{content:none!important;display:none!important}
+.botanical-press{
+  position:absolute;
+  display:block;
+  max-width:none;
+  height:auto;
+  pointer-events:none;
+  user-select:none;
+  filter:none;
+  z-index:1;
+  object-fit:contain;
+}
+.hero .hero-photo-column .botanical-hero-sprig{
+  width:112px;
+  right:-13px;
+  top:5px;
+  transform:rotate(26deg);
+  opacity:.77;
+  z-index:1;
+}
+.about-section .botanical-about-fern{
+  width:165px;
+  left:-17px;
+  bottom:8%;
+  transform:rotate(-21deg);
+  opacity:.66;
+}
+.resume-section .botanical-resume-oak{
+  width:116px;
+  right:-21px;
+  top:27%;
+  transform:rotate(31deg);
+  opacity:.50;
+}
+.writing-section .botanical-writing-sprig{
+  width:144px;
+  left:-34px;
+  bottom:9%;
+  transform:rotate(-22deg);
+  opacity:.57;
+}
+@media(max-width:900px){
+  .hero .hero-photo-column .botanical-hero-sprig{width:92px;right:-4px;top:8px}
+  .about-section .botanical-about-fern{width:125px;left:-22px;bottom:3%}
+  .resume-section .botanical-resume-oak{width:91px;right:-20px;top:34%;opacity:.42}
+  .writing-section .botanical-writing-sprig{width:105px;left:-29px}
+}
+@media(max-width:600px){
+  .hero .hero-photo-column .botanical-hero-sprig{width:76px;right:-8px;top:9px;opacity:.63}
+  .about-section .botanical-about-fern{width:100px;left:-27px;bottom:1%;opacity:.49}
+  .resume-section .botanical-resume-oak{width:77px;right:-24px;top:25%;opacity:.36}
+  .writing-section .botanical-writing-sprig{width:89px;left:-24px;bottom:5%;opacity:.39}
+}
