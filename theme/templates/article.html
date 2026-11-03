@@ -1,0 +1,4 @@
+{% extends "base.html" %}
+{% block title %}{{ article.title }} · {{ SITENAME }}{% endblock %}
+{% block description %}{{ article.summary|striptags|truncate(150) }}{% endblock %}
+{% block content %}<article class="post"><a class="text-link" href="{{ SITEURL }}/blog/">← All posts</a><p class="section-kicker">{{ article.date.strftime('%B %d, %Y') }}{% if article.category %} · {{ article.category }}{% endif %}</p><h1>{{ article.title }}</h1><div class="post-body">{{ article.content }}</div></article>{% endblock %}

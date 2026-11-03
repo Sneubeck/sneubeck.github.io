@@ -1,0 +1,176 @@
+[
+  {
+    "title": "It's Time for a New Password Manager",
+    "category": "Customer education",
+    "publication": "Passbolt",
+    "url": "https://www.passbolt.com/blog/its-time-for-a-new-password-manager"
+  },
+  {
+    "title": "The Power of Open Source Cybersecurity",
+    "category": "Customer education",
+    "publication": "Infosecurity Magazine",
+    "url": "https://www.infosecurity-magazine.com/blogs/power-of-open-source-cybersecurity/"
+  },
+  {
+    "title": "Understanding SSO with Google",
+    "category": "Customer education",
+    "publication": "Passbolt",
+    "url": "https://www.passbolt.com/blog/sso-with-google"
+  },
+  {
+    "title": "Secure Development Mistakes",
+    "category": "Customer education",
+    "publication": "Passbolt",
+    "url": "https://www.passbolt.com/blog/secure-dev-mistakes"
+  },
+  {
+    "title": "AI & Cybersecurity: A Balancing Act",
+    "category": "Customer education",
+    "publication": "Passbolt",
+    "url": "https://www.passbolt.com/blog/ai-cybersecurity-a-balancing-act-for-businesses"
+  },
+  {
+    "title": "A Password Manager for NGOs & Foundations",
+    "category": "Customer education",
+    "publication": "Passbolt",
+    "url": "https://www.passbolt.com/blog/a-password-manager-for-ngos-foundations"
+  },
+  {
+    "title": "Remote Caching",
+    "category": "Product & case studies",
+    "publication": "EngFlow",
+    "url": "https://www.engflow.com/product/remoteCaching?r=menu"
+  },
+  {
+    "title": "CMake Remote Execution",
+    "category": "Product & case studies",
+    "publication": "EngFlow",
+    "url": "https://www.engflow.com/product/cmakere"
+  },
+  {
+    "title": "Replay.io Case Study",
+    "category": "Product & case studies",
+    "publication": "EngFlow",
+    "url": "https://www.engflow.com/caseStudies/replay"
+  },
+  {
+    "title": "Shift Case Study",
+    "category": "Product & case studies",
+    "publication": "EngFlow",
+    "url": "https://www.engflow.com/caseStudies/shift"
+  },
+  {
+    "title": "Viasat Case Study",
+    "category": "Product & case studies",
+    "publication": "EngFlow",
+    "url": "https://www.engflow.com/caseStudies/viasat"
+  },
+  {
+    "title": "Disaster Recovery for Passbolt",
+    "category": "Technical writing",
+    "publication": "Passbolt",
+    "url": "https://www.passbolt.com/blog/disaster-recovery-for-passbolt"
+  },
+  {
+    "title": "Back Up Passbolt Data with Bash",
+    "category": "Technical writing",
+    "publication": "Passbolt",
+    "url": "https://www.passbolt.com/blog/backup-using-bash"
+  },
+  {
+    "title": "Installing Passbolt with Helm",
+    "category": "Technical writing",
+    "publication": "Passbolt",
+    "url": "https://www.passbolt.com/blog/installing-passbolt-with-helm"
+  },
+  {
+    "title": "Introducing Role-Based Access Control",
+    "category": "Product & case studies",
+    "publication": "Passbolt",
+    "url": "https://www.passbolt.com/blog/introducing-rbac"
+  },
+  {
+    "title": "Everything You Need to Know About Passbolt's SSO",
+    "category": "Product & case studies",
+    "publication": "Passbolt",
+    "url": "https://www.passbolt.com/blog/new-sso-feature"
+  },
+  {
+    "title": "Introducing the Suspended User Feature",
+    "category": "Product & case studies",
+    "publication": "Passbolt",
+    "url": "https://www.passbolt.com/blog/introducing-suspended-user"
+  },
+  {
+    "title": "Passbolt's First Hackathon",
+    "category": "Community & events",
+    "publication": "Passbolt",
+    "url": "https://www.passbolt.com/blog/passbolts-first-hackathon"
+  },
+  {
+    "title": "Celebrating 4,000 GitHub Stars",
+    "category": "Community & events",
+    "publication": "Passbolt",
+    "url": "https://www.passbolt.com/blog/4k-stars-github"
+  },
+  {
+    "title": "Passbolt Lore: The Genesis",
+    "category": "Community & events",
+    "publication": "Passbolt",
+    "url": "https://www.passbolt.com/blog/the-genesis-of-passbolt"
+  },
+  {
+    "title": "EngFlow Customer Forest",
+    "category": "Community & events",
+    "publication": "EngFlow",
+    "url": "https://blog.engflow.com/2025/04/30/rooted-in-partnership-celebrating-our-customers-with-the-engflow-customer-forest/"
+  },
+  {
+    "title": "Bazel Bites: A Tasty Metaphor",
+    "category": "Community & events",
+    "publication": "EngFlow",
+    "url": "https://blog.engflow.com/2024/03/28/bazel-bites-a-tasty-metaphor-for-streamlined-builds/"
+  },
+  {
+    "title": "Munich Build Meetup Recap",
+    "category": "Community & events",
+    "publication": "EngFlow",
+    "url": "https://blog.engflow.com/2025/04/25/munich-build-meetup-recap---engflow--jetbrains/"
+  },
+  {
+    "title": "London Build Meetup Recap",
+    "category": "Community & events",
+    "publication": "EngFlow",
+    "url": "https://blog.engflow.com/2025/05/29/london-build-meetup-recap---engflow-jane-street--tweag/"
+  },
+  {
+    "title": "Passbolt v4.0.0 Release",
+    "category": "Release notes",
+    "publication": "Passbolt",
+    "url": "https://github.com/passbolt/passbolt_api/releases/tag/v4.0.0"
+  },
+  {
+    "title": "Passbolt v4.4.0 Release",
+    "category": "Release notes",
+    "publication": "Passbolt",
+    "url": "https://github.com/passbolt/passbolt_api/releases/tag/v4.4.0"
+  },
+  {
+    "title": "Passbolt API README",
+    "category": "Technical writing",
+    "publication": "GitHub",
+    "url": "https://github.com/passbolt/passbolt_api/blob/master/README.md"
+  },
+  {
+    "title": "81% of Data Breaches and Poor Password Management",
+    "category": "Customer education",
+    "publication": "Silicon Luxembourg",
+    "url": "https://www.siliconluxembourg.lu/81-of-data-breaches-are-due-to-poor-password-management-is-your-business-at-risk/"
+  },
+  {
+    "title": "Solving Your Team's Secure Collaboration Challenges",
+    "category": "Customer education",
+    "publication": "The Hacker News",
+    "url": "https://thehackernews.com/2023/05/solving-your-teams-secure-collaboration.html"
+  }
+]

@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Blog · {{ SITENAME }}{% endblock %}
+{% block content %}
+<section class="page-hero"><span class="section-kicker">NOTES FROM THE FIELD</span><h1>The <em>blog.</em></h1><p>Thoughts about developer communities, good writing, open source, and whatever else is crawling around my brain.</p></section>
+<section class="blog-list">
+{% if dates %}
+ {% for article in dates %}<a class="writing-row" href="{{ SITEURL }}/{{ article.url }}"><span class="writing-category">{{ article.date.strftime('%b %d, %Y') }}</span><span class="writing-title">{{ article.title }}</span><span class="writing-publication">Read ↗</span></a>{% endfor %}
+{% else %}<div class="blog-empty"><span class="empty-doodle" aria-hidden="true">✳</span><h2>Nothing here. <em>Yet.</em></h2><p>This space is ready for the first post. No forced introduction post required.</p><a class="text-link" href="{{ SITEURL }}/writing.html">Browse published writing ↗</a></div>{% endif %}
+</section>
+{% endblock %}
