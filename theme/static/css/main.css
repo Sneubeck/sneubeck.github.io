@@ -88,3 +88,39 @@ body{background-image:radial-gradient(rgba(79,67,45,.055) .5px,transparent .75px
 .writing-title{font-size:21px}
 .site-header nav{font-size:14px}
 @media(max-width:600px){.resume-section .skill-grid{grid-template-columns:1fr}.site-header nav{font-size:13px}}
+
+
+/* Actual photo tape: sits above the card and overlaps its edge rather than clipping. */
+.photo-column{isolation:isolate}
+.photo-placeholder,.photo-placeholder.photo-small{overflow:visible!important;isolation:isolate}
+.photo-placeholder:before,.photo-placeholder:after,
+.photo-placeholder.photo-small:before,.photo-placeholder.photo-small:after{content:none!important;display:none!important}
+.photo-tape{position:absolute;z-index:12;display:block;height:34px;width:120px;top:-14px;border:1px solid rgba(93,82,57,.12);box-shadow:0 2px 3px rgba(38,60,53,.10);opacity:.92;pointer-events:none;clip-path:polygon(0 5%,96% 0,100% 13%,97% 28%,100% 50%,98% 75%,100% 95%,5% 100%,0 89%,3% 70%,0 52%,3% 30%)}
+.tape-primary-left{left:-34px;transform:rotate(-29deg);background:linear-gradient(110deg,rgba(255,255,255,.19),transparent 40%,rgba(92,63,26,.08)),#dbc69b}
+.tape-primary-right{right:-37px;transform:rotate(28deg);background-color:#a6b39b;background-image:linear-gradient(rgba(250,246,226,.43) 1px,transparent 1px),linear-gradient(90deg,rgba(250,246,226,.43) 1px,transparent 1px);background-size:12px 12px}
+.tape-secondary-left{left:-27px;top:-12px;width:100px;height:29px;transform:rotate(-26deg);background:linear-gradient(110deg,rgba(255,255,255,.16),transparent),#c98265}
+.tape-secondary-right{right:-25px;top:-12px;width:92px;height:29px;transform:rotate(31deg);background-color:#dabb78;background-image:linear-gradient(rgba(255,255,255,.45) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.45) 1px,transparent 1px);background-size:10px 10px}
+/* Uploaded SVG specimens, intentionally each at a different angle. */
+.field-bug{position:absolute;pointer-events:none;user-select:none;z-index:3;object-fit:contain;filter:drop-shadow(2px 5px 3px rgba(38,60,53,.10));opacity:.92;max-width:none}
+.hero .field-bug{z-index:2}
+.bug-hero-dragonfly{width:92px;left:4%;bottom:5%;transform:rotate(-31deg)}
+.bug-hero-butterfly{width:102px;right:7%;top:2%;transform:rotate(16deg)}
+.bug-about-ladybug{width:70px;right:2%;top:9%;transform:rotate(34deg)}
+.bug-photo-stag{width:84px;left:-43px;top:46%;transform:rotate(-23deg);z-index:6}
+.bug-photo-leaf{width:77px;right:-24px;bottom:0;transform:rotate(11deg);z-index:6}
+.bug-resume-scarab{width:76px;right:6%;top:98px;transform:rotate(-14deg)}
+.bug-writing-butterfly{width:75px;right:4%;top:105px;transform:rotate(-24deg)}
+.bug-contact-dragonfly{width:75px;right:5%;bottom:24px;transform:rotate(49deg)}
+/* Bugs should never block interactive content. */
+.hero-copy,.about-copy,.resume-layout,.section-heading,.writing-list,.filter-bar,.contact-actions{position:relative;z-index:5}
+@media(max-width:900px){.bug-hero-dragonfly{left:2%;bottom:0}.bug-about-ladybug{right:1%;top:5%}.bug-resume-scarab{right:3%;top:55px}}
+@media(max-width:600px){
+ .photo-tape{width:85px;height:25px;top:-10px}.tape-primary-left{left:-23px}.tape-primary-right{right:-20px}
+ .tape-secondary-left{width:72px;height:23px;left:-16px}.tape-secondary-right{width:70px;height:23px;right:-15px}
+ .bug-hero-dragonfly{width:56px;left:2%;bottom:7%}.bug-hero-butterfly{width:65px;right:3%;top:4%}
+ .bug-about-ladybug{width:49px;right:2%;top:30px}
+ .bug-photo-stag{width:54px;left:-23px;top:42%}.bug-photo-leaf{width:52px;right:-15px;bottom:0}
+ .bug-resume-scarab{width:48px;right:3%;top:90px}
+ .bug-writing-butterfly{width:47px;right:2%;top:45px}
+ .bug-contact-dragonfly{width:52px;right:2%;bottom:10px}
+}
