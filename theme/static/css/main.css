@@ -28,7 +28,7 @@ html{scroll-padding-top:30px}section[id]{scroll-margin-top:30px}
 body{background-image:radial-gradient(rgba(79,67,45,.055) .5px,transparent .75px);background-size:7px 7px}
 .site-shell{border-inline:1px solid rgba(38,60,53,.08)}
 .site-header{position:relative;border-bottom:2px solid var(--ink)}
-.site-header:after{content:"FIELD JOURNAL / NO. 001";position:absolute;right:5.5%;bottom:-11px;background:var(--cream);padding:0 12px;font:700 9px 'DM Sans',sans-serif;letter-spacing:.18em}
+
 .wordmark-separator{margin:0 8px;color:var(--rust);font-size:.7em}
 .eyebrow{display:inline-block;padding:0 0 7px;border-bottom:1px solid var(--ink);font-size:14px;letter-spacing:.03em;text-transform:none}
 .hero,.about-section,.resume-section,.writing-section{position:relative}
@@ -558,32 +558,50 @@ section[id]{scroll-margin-top:20px}
 .contact-band .contact-actions small{color:rgba(255,250,240,.80)}
 .contact-band .btn.secondary{color:var(--ink);background:var(--cream);border-color:var(--cream)}
 .contact-band .btn.secondary:hover{background:var(--white)}
-/* Quiet, wandering marginal growth instead of sticker-like plant clip art:
-   low-contrast stem curves and small pressed-leaf silhouettes only at edges. */
-.about-section,.resume-section,.writing-section{isolation:isolate;overflow:clip}
+/* Visible, understated foliage in the page margins, not separate illustrations. */
+.about-section,.resume-section,.writing-section{
+  position:relative;
+  isolation:isolate;
+  overflow:clip;
+}
 .about-section::before,
 .resume-section::before,
 .writing-section::before{
   content:"";
-  display:block;
   position:absolute;
+  display:block;
   pointer-events:none;
-  z-index:0;
-  width:148px;
-  height:255px;
-  opacity:.30;
-  border-left:2px solid rgba(75,100,71,.42);
-  border-radius:60% 0 0 45%;
-  transform:rotate(-15deg);
+  z-index:1;
+  width:150px;
+  height:265px;
+  border-left:2px solid rgba(77,105,71,.60);
+  border-radius:65% 0 0 40%;
   background:
-    radial-gradient(ellipse 17px 38px at 39px 62px,rgba(103,129,88,.25) 0 82%,transparent 86%),
-    radial-gradient(ellipse 13px 29px at 11px 117px,rgba(103,129,88,.24) 0 82%,transparent 86%),
-    radial-gradient(ellipse 18px 31px at 42px 178px,rgba(103,129,88,.23) 0 82%,transparent 86%);
+    radial-gradient(ellipse 17px 41px at 43px 54px,rgba(91,119,77,.48) 0 78%,transparent 82%),
+    radial-gradient(ellipse 15px 34px at 10px 105px,rgba(91,119,77,.46) 0 78%,transparent 82%),
+    radial-gradient(ellipse 18px 37px at 47px 151px,rgba(91,119,77,.44) 0 78%,transparent 82%),
+    radial-gradient(ellipse 13px 29px at 11px 207px,rgba(91,119,77,.39) 0 78%,transparent 82%);
 }
-.about-section::before{left:-45px;bottom:8%}
-.resume-section::before{right:-48px;top:11%;transform:scaleX(-1) rotate(-12deg);opacity:.25}
-.writing-section::before{left:-52px;bottom:11%;transform:rotate(7deg);opacity:.26}
+.about-section::before{
+  left:9px;
+  bottom:5%;
+  opacity:.72;
+  transform:rotate(-11deg);
+}
+.resume-section::before{
+  right:8px;
+  top:15%;
+  opacity:.63;
+  transform:scaleX(-1) rotate(-9deg);
+}
+.writing-section::before{
+  left:12px;
+  bottom:10%;
+  opacity:.67;
+  transform:rotate(11deg);
+}
 .about-section .about-grid,
+.about-section .specimen-bar,
 .resume-section .resume-document,
 .resume-section .section-heading,
 .resume-section .education,
@@ -591,7 +609,27 @@ section[id]{scroll-margin-top:20px}
 .writing-section .writing-intro,
 .writing-section .filter-bar,
 .writing-section .writing-list,
-.writing-section .archive-header{position:relative;z-index:2}
+.writing-section .archive-header{
+  position:relative;
+  z-index:2;
+}
+@media(max-width:900px){
+ .about-section::before,.resume-section::before,.writing-section::before{
+   width:110px;
+   height:215px;
+   opacity:.46;
+ }
+}
+@media(max-width:600px){
+ .about-section::before,.resume-section::before,.writing-section::before{
+   width:82px;
+   height:170px;
+   opacity:.32;
+ }
+ .about-section::before{left:2px;bottom:2%}
+ .resume-section::before{right:2px;top:8%}
+ .writing-section::before{left:2px;bottom:4%}
+}
 /* Make wandering insects read as marginalia, not foreground obstructions. */
 .about-section .bug-about-ladybug{z-index:3}
 .resume-section .bug-resume-dragonfly,.resume-section .bug-resume-scarab{z-index:1;opacity:.65}
@@ -614,6 +652,6 @@ section[id]{scroll-margin-top:20px}
   width:41%;
   min-height:110px;
  }
- .about-section::before,.resume-section::before,.writing-section::before{opacity:.15;width:105px;height:185px}
+ 
  .site-footer{line-height:1.6}
 }
