@@ -173,3 +173,49 @@ body{background-image:radial-gradient(rgba(79,67,45,.055) .5px,transparent .75px
  .resume-section .section-heading,.writing-section .section-heading{padding-right:45px}
  .contact-band>div{padding-right:0}
 }
+
+
+/* Approved illustration cutouts from the previous design, not newly drawn bugs. */
+.field-art{position:absolute;z-index:2;max-width:none;pointer-events:none;user-select:none;object-fit:contain;filter:drop-shadow(2px 4px 4px rgba(38,60,53,.09))}
+.field-coffee-plate{width:33%;right:-7%;bottom:11%;transform:rotate(20deg);z-index:3}
+.field-mimosa-about{width:107px;left:1.5%;bottom:12px;transform:rotate(-15deg);opacity:.84}
+.field-coffee-resume{width:100px;right:3%;top:42%;transform:rotate(15deg);opacity:.85}
+.field-mimosa-writing{width:105px;right:2%;bottom:24px;transform:rotate(18deg);opacity:.82}
+.field-firefly-contact{width:86px;right:5%;top:21px;transform:rotate(-23deg)}
+.bug-resume-dragonfly{width:78px;left:2%;top:39%;transform:rotate(-32deg);opacity:.82}
+.bug-writing-leaf{width:62px;left:2%;bottom:11%;transform:rotate(26deg);opacity:.86}
+.about-grid,.resume-layout,.resume-section .skills,.writing-list,.writing-intro,.filter-bar,.contact-band>div{position:relative;z-index:5}
+.site-header nav a.is-active,.site-header nav a[aria-current="location"]{color:var(--rust);text-decoration:underline;text-underline-offset:8px;text-decoration-thickness:2px}
+.site-header nav a:focus-visible{outline-offset:6px}
+html{scroll-behavior:smooth;scroll-padding-top:20px}
+section[id]{scroll-margin-top:20px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.wordmark{white-space:nowrap}
+.resume-section .skill-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:34px 52px}
+.skill-grid .skill-group{padding:0 0 22px;border-bottom:1px solid var(--rule)}
+.skill-group h3{display:flex;align-items:center;gap:12px;font-size:21px;line-height:1.3;margin:0 0 14px}
+.skill-group .skill-icon{flex:none;display:block;width:34px;height:34px;padding:6px;background:#f1eee3!important;color:var(--ink)!important;border:1px solid var(--olive);border-radius:3px!important}
+.skill-group ul{margin:0;padding-left:24px;list-style:disc}
+.skill-group li{margin:6px 0;line-height:1.55;break-inside:avoid}
+.skill-group li::marker{color:var(--rust);font-size:.8em}
+@media(max-width:900px){
+ .field-coffee-plate{width:30%;right:-4%;bottom:14%}
+ .field-coffee-resume{right:1%;width:72px}
+ .field-mimosa-about{width:78px;bottom:15px}
+ .field-mimosa-writing{width:73px}
+ .field-firefly-contact{width:65px}
+ .bug-resume-dragonfly{width:57px}
+ .bug-writing-leaf{width:48px}
+}
+@media(max-width:600px){
+ .resume-section .skill-grid{grid-template-columns:1fr}
+ .field-coffee-plate{width:28%;right:-3%;bottom:18%}
+ .field-mimosa-about{width:55px;left:0;bottom:8px}
+ .field-coffee-resume{width:52px;right:1%;top:44%}
+ .field-mimosa-writing{width:60px;right:0;bottom:16px}
+ .field-firefly-contact{width:48px;right:1%;top:13px}
+ .bug-resume-dragonfly{width:42px;left:0;top:41%}
+ .bug-writing-leaf{width:39px;left:1%;bottom:6%}
+ .skill-group h3{font-size:19px}
+ .wordmark{font-size:clamp(17px,4.5vw,24px)}
+}

@@ -11,7 +11,7 @@
 <a class="skip" href="#main">Skip to content</a>
 <div class="site-shell">
 <header class="site-header">
- <a class="wordmark" href="#top" aria-label="Shelby Lee Neubeck home">shelby lee<span class="wordmark-separator">/</span>neubeck</a>
+ <a class="wordmark" href="#top" aria-label="Shelby Lee Neubeck home">shelby lee neubeck</a>
  <nav aria-label="Main navigation"><a href="#about">About</a><a href="#resume">Resume</a><a href="#writing">Writing</a><a href="#contact">Contact</a></nav>
 </header>
 <main id="main">{% block content %}{% endblock %}</main>
@@ -37,6 +37,45 @@ button.addEventListener('click', () => {
  button.replaceWith(link);
  link.focus();
 });
+})();
+</script>
+
+<script>
+(() => {
+  const links = Array.from(document.querySelectorAll('.site-header nav a[href^="#"]'));
+  const sections = links.map(link => document.querySelector(link.getAttribute('href'))).filter(Boolean);
+  if (!links.length || !sections.length) return;
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let ticking = false;
+  const update = () => {
+    ticking = false;
+    const offset = (document.querySelector('.site-header')?.getBoundingClientRect().height || 0) + 75;
+    let active = null;
+    for (const section of sections) {
+      if (section.getBoundingClientRect().top <= offset) active = section.id;
+    }
+    if (window.scrollY < 30) active = null;
+    for (const link of links) {
+      const current = link.hash === '#' + active;
+      link.classList.toggle('is-active', current);
+      if (current) link.setAttribute('aria-current','location');
+      else link.removeAttribute('aria-current');
+    }
+    const desiredHash = active ? '#' + active : '';
+    if (window.location.hash !== desiredHash) {
+      history.replaceState(history.state, '', window.location.pathname + window.location.search + desiredHash);
+    }
+  };
+  window.addEventListener('scroll', () => {
+    if (!ticking) { ticking = true; window.requestAnimationFrame(update); }
+  }, {passive:true});
+  window.addEventListener('resize', update);
+  window.addEventListener('load', update);
+  links.forEach(link => link.addEventListener('click', () => {
+    // Native anchor navigation handles the URL and scroll; the observer
+    // updates highlighting as the destination moves into view.
+    if (reduceMotion) window.requestAnimationFrame(update);
+  }));
 })();
 </script>
 </body></html>
