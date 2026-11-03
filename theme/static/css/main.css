@@ -133,3 +133,43 @@ body{background-image:radial-gradient(rgba(79,67,45,.055) .5px,transparent .75px
 .specimen-bar{overflow:visible}
 @media(max-width:900px){.bug-plate-stag{width:40%;left:23%;top:24%}.bug-plate-butterfly{width:28%;right:9%;top:10%}}
 @media(max-width:600px){.bug-plate-stag{width:45%;left:19%;top:25%}.bug-plate-butterfly{width:31%;right:5%;top:11%}.bug-notes-ladybug{width:38px;height:38px}}
+
+
+/* Placement audit: keep decoration at the periphery, not over copy or filters. */
+.hero,.about-section,.resume-section,.writing-section,.contact-band{position:relative}
+.art.specimen-art{isolation:isolate}
+.art.specimen-art .bug-plate-stag{width:41%;left:17%;top:25%;transform:rotate(-12deg)}
+.art.specimen-art .bug-plate-butterfly{width:28%;right:8%;top:9%;transform:rotate(21deg)}
+.bug-about-ladybug{top:6%;right:3%;width:57px;transform:rotate(27deg)}
+.bug-photo-stag{left:-32px;top:43%;width:69px;transform:rotate(-23deg);z-index:4}
+.bug-photo-leaf{right:-11px;bottom:4%;width:61px;transform:rotate(12deg);z-index:4}
+.bug-resume-scarab{right:4%;top:24px;width:64px;transform:rotate(-17deg);opacity:.84}
+.bug-writing-butterfly{right:3%;top:24px;width:64px;transform:rotate(32deg);opacity:.86}
+.bug-contact-dragonfly{right:3%;bottom:12px;width:63px;transform:rotate(43deg);opacity:.8}
+.bug-notes-ladybug{width:42px;height:42px;transform:rotate(8deg)}
+.about-grid,.resume-layout,.writing-section .section-heading,.writing-intro,.filter-bar,.archive-header,.writing-list,.contact-band>div{position:relative;z-index:5}
+.writing-section .section-heading{padding-right:70px}
+.resume-section .section-heading{padding-right:80px}
+.contact-band>div{padding-right:24px}
+@media(max-width:900px){
+ .art.specimen-art .bug-plate-stag{width:39%;left:23%;top:24%}
+ .art.specimen-art .bug-plate-butterfly{width:27%;right:7%;top:8%}
+ .bug-photo-stag{left:-17px;width:54px}
+ .bug-photo-leaf{right:-7px;width:45px}
+ .bug-about-ladybug{right:2%;width:47px}
+ .bug-resume-scarab{width:49px;right:3%;top:21px}
+ .bug-writing-butterfly{width:47px;right:2%;top:22px}
+}
+@media(max-width:600px){
+ .art.specimen-art .bug-plate-stag{width:42%;left:20%;top:26%}
+ .art.specimen-art .bug-plate-butterfly{width:29%;right:8%;top:10%}
+ .bug-about-ladybug{width:39px;top:34px;right:3%}
+ .bug-photo-stag{left:-15px;top:43%;width:44px}
+ .bug-photo-leaf{right:-4px;bottom:2%;width:38px}
+ .bug-resume-scarab{width:38px;right:3%;top:18px}
+ .bug-writing-butterfly{width:37px;right:2%;top:16px}
+ .bug-contact-dragonfly{width:39px;right:1%;bottom:9px}
+ .bug-notes-ladybug{width:34px;height:34px}
+ .resume-section .section-heading,.writing-section .section-heading{padding-right:45px}
+ .contact-band>div{padding-right:0}
+}

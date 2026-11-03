@@ -1,5 +1,23 @@
 [
   {
+    "title": "RBE is fast enough for AI agents. But, is it safe enough?",
+    "category": "Technical writing",
+    "publication": "Aspect Build",
+    "url": "https://aspect.build/blog/ai-agents-rbe"
+  },
+  {
+    "title": "VideoAmp customer story",
+    "category": "Product & case studies",
+    "publication": "Aspect Build",
+    "url": "https://aspect.build/customers/videoamp"
+  },
+  {
+    "title": "Committed to Open Source",
+    "category": "Customer education",
+    "publication": "Aspect Build",
+    "url": "https://aspect.build/open-source"
+  },
+  {
     "title": "It's Time for a New Password Manager",
     "category": "Customer education",
     "publication": "Passbolt",
