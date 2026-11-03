@@ -124,3 +124,43 @@ body{background-image:radial-gradient(rgba(79,67,45,.055) .5px,transparent .75px
  .bug-writing-butterfly{width:47px;right:2%;top:45px}
  .bug-contact-dragonfly{width:52px;right:2%;bottom:10px}
 }
+
+
+/* Unified naturalist specimen illustrations. All bugs now use external flat SVGs. */
+.art.specimen-art{isolation:isolate;overflow:visible}
+.art.specimen-art .art-sun,.art.specimen-art .art-leaf{opacity:.45}
+.art.specimen-art .field-bug{position:absolute;max-width:none;z-index:4;pointer-events:none}
+.bug-plate-rhino{width:47%;left:20%;top:23%;transform:rotate(-16deg);filter:drop-shadow(3px 5px 2px rgba(38,60,53,.13))}
+.bug-plate-atlas{width:34%;right:4%;top:11%;transform:rotate(23deg);filter:drop-shadow(2px 4px 2px rgba(38,60,53,.12))}
+.bug-plate-coffee{width:29%;left:-4%;bottom:12%;transform:rotate(34deg);filter:drop-shadow(2px 4px 2px rgba(38,60,53,.08))}
+.bug-hero-firefly{width:84px;right:3%;top:3%;transform:rotate(-25deg)}
+.bug-about-mimosa{width:112px;left:2%;bottom:2%;transform:rotate(-17deg);opacity:.84}
+.about-copy{position:relative}
+.bug-about-coffee{width:78px;right:-5%;bottom:-5%;transform:rotate(29deg);opacity:.75}
+.bug-resume-mantis{width:98px;right:4%;top:115px;transform:rotate(16deg)}
+.bug-resume-cicada{width:78px;left:4%;top:51%;transform:rotate(-27deg)}
+.bug-writing-spider{width:73px;left:2%;top:53%;transform:rotate(-19deg)}
+.bug-writing-scarab{width:80px;right:3%;top:160px;transform:rotate(32deg)}
+.bug-notes-bee{position:relative!important;inset:auto!important;display:block;width:63px;height:63px;transform:rotate(14deg);z-index:2}
+.specimen-bar .bug-notes-bee{filter:none}
+.specimen-bar{overflow:visible}
+.about-copy p,.timeline,.writing-section .writing-list{position:relative;z-index:4}
+@media(max-width:900px){
+ .bug-plate-rhino{width:40%;left:28%;top:19%}.bug-plate-atlas{width:29%;right:10%;top:7%}
+ .bug-hero-firefly{right:3%;top:6%;width:63px}
+ .bug-resume-mantis{width:68px;right:2%;top:65px}
+ .bug-resume-cicada{width:61px;left:1%;top:57%}
+ .bug-writing-spider{width:59px;left:1%}
+}
+@media(max-width:600px){
+ .bug-plate-rhino{width:44%;left:21%;top:21%}.bug-plate-atlas{width:29%;right:7%;top:8%}
+ .bug-plate-coffee{width:28%;left:-3%;bottom:16%}
+ .bug-hero-firefly{width:49px;right:2%;top:5%}
+ .bug-about-mimosa{width:59px;left:1%;bottom:1%}
+ .bug-about-coffee{width:45px;right:0;bottom:-15px}
+ .bug-resume-mantis{width:50px;right:1%;top:80px}
+ .bug-resume-cicada{width:46px;left:0;top:52%}
+ .bug-writing-spider{width:44px;left:0;top:55%}
+ .bug-writing-scarab{width:47px;right:1%;top:120px}
+ .bug-notes-bee{width:49px;height:49px}
+}
