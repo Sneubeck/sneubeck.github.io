@@ -292,3 +292,34 @@ section[id]{scroll-margin-top:20px}
  .resume-section .education{grid-template-columns:minmax(0,1fr);padding:35px 0 55px;gap:24px}
  .resume-section .education>.section-kicker{grid-column:1}
 }
+
+
+/* Writing: sage-tinted graph paper, distinct from the clean resume spread. */
+.writing-section{
+  position:relative;
+  isolation:isolate;
+  background-color:#e8ede3;
+  background-image:
+    linear-gradient(to right,rgba(89,119,98,.125) 1px,transparent 1px),
+    linear-gradient(to bottom,rgba(89,119,98,.125) 1px,transparent 1px),
+    linear-gradient(to right,rgba(89,119,98,.055) 1px,transparent 1px),
+    linear-gradient(to bottom,rgba(89,119,98,.055) 1px,transparent 1px);
+  background-size:80px 80px,80px 80px,16px 16px,16px 16px;
+  background-position:0 0,0 0,0 0,0 0;
+  border-top:3px solid var(--ink);
+  border-bottom:1px solid rgba(38,60,53,.2);
+  box-shadow:inset 0 14px 20px -24px rgba(38,60,53,.35);
+}
+.writing-section .section-heading,
+.writing-section .writing-intro,
+.writing-section .filter-bar,
+.writing-section .archive-header,
+.writing-section .writing-list,
+.writing-section .archive-note{position:relative;z-index:5}
+.writing-section .writing-row:hover,
+.writing-section .writing-row:focus-visible{
+  background-color:rgba(247,241,229,.84);
+}
+@media(max-width:600px){
+  .writing-section{background-size:64px 64px,64px 64px,16px 16px,16px 16px}
+}
