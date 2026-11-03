@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Praying mantis"><title>Praying mantis</title>
+<path d="M104 72 L83 30 M136 72 L157 30" fill="none" stroke="#263C35" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<ellipse cx="120" cy="82" rx="37" ry="22" fill="#738D68" stroke="#263C35" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" />
+<circle cx="100" cy="77" r="7" fill="#263C35" stroke="#263C35" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="140" cy="77" r="7" fill="#263C35" stroke="#263C35" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M111 100 Q101 130 105 168 L119 216 Q135 175 136 143 L128 101 Z" fill="#A8B59B" stroke="#263C35" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M109 137 L72 168 L49 209 M132 137 L169 168 L191 209 M112 178 L84 212 M128 178 L156 212" fill="none" stroke="#263C35" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M105 111 L67 107 L42 132 L56 158 M135 111 L173 107 L198 132 L184 158" fill="none" stroke="#263C35" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M42 132 Q29 125 34 106 L51 93 Q59 117 56 158 Z" fill="#738D68" stroke="#263C35" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M198 132 Q211 125 206 106 L189 93 Q181 117 184 158 Z" fill="#738D68" stroke="#263C35" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M59 143 L43 158 M181 143 L197 158" fill="none" stroke="#263C35" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Firefly"><title>Firefly</title>
+<path d="M103 115 C65 86 38 55 51 33 C71 11 103 49 119 91 Z" fill="#D8C6B3" stroke="#263C35" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M137 115 C175 86 202 55 189 33 C169 11 137 49 121 91 Z" fill="#D8C6B3" stroke="#263C35" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M91 129 L49 115 M89 160 L41 167 M95 186 L65 216 M149 129 L191 115 M151 160 L199 167 M145 186 L175 216" fill="none" stroke="#263C35" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<ellipse cx="120" cy="153" rx="47" ry="68" fill="#8F695A" stroke="#263C35" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M78 175 Q120 191 162 175 L155 209 Q120 235 85 209 Z" fill="#E8B95F" stroke="#263C35" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<ellipse cx="120" cy="105" rx="36" ry="29" fill="#263C35" stroke="#263C35" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M109 86 L92 65 M131 86 L148 65" fill="none" stroke="#263C35" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M120 235 V240 M64 208 L51 220 M176 208 L189 220" fill="none" stroke="#263C35" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>
