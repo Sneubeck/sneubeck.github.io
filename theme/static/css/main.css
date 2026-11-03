@@ -313,3 +313,82 @@ section[id]{scroll-margin-top:20px}
 .writing-section .archive-note{position:relative;z-index:5}
 .writing-section .writing-row:hover,
 .writing-section .writing-row:focus-visible{background-color:rgba(247,241,229,.84)}
+
+/* Naturalist journal botanical overflow and sage resume field */
+/* A solid leaf-green leaf in the journal, with no dotted paper grain in Resume. */
+.resume-section{
+  background:var(--sage);
+  background-image:none!important;
+  border-top:0;
+  border-bottom:0;
+}
+.resume-section .skills{background:transparent!important}
+.resume-section .education{background:transparent}
+/* Pressed botanical specimens grow beyond the drawing frame, not beyond page edges. */
+.hero{overflow:clip}
+.hero .art.specimen-art{
+  overflow:visible;
+  isolation:isolate;
+  background:linear-gradient(153deg,rgba(255,250,240,.85),rgba(231,221,200,.24));
+  border-color:rgba(38,60,53,.34);
+}
+.hero .art.specimen-art::before{
+  left:8%;
+  top:8%;
+  width:76%;
+  height:78%;
+  background:rgba(109,120,96,.30);
+  border-radius:55% 45% 42% 58%/47% 58% 42% 53%;
+  transform:rotate(-17deg);
+  z-index:0;
+}
+.hero .art.specimen-art::after{opacity:.18;z-index:0}
+.hero .art.specimen-art .field-art{
+  position:absolute;
+  pointer-events:none;
+  max-width:none;
+  filter:none;
+}
+.hero .art.specimen-art .field-coffee-plate{
+  width:48%;
+  right:-19%;
+  bottom:-15%;
+  transform:rotate(8deg);
+  z-index:5;
+  opacity:.95;
+}
+.hero .art.specimen-art .field-mimosa-plate{
+  width:35%;
+  right:-12%;
+  top:-23%;
+  transform:rotate(24deg);
+  z-index:3;
+  opacity:.91;
+}
+.hero .art.specimen-art .bug-plate-stag{
+  left:18%;
+  top:25%;
+  width:42%;
+  transform:rotate(-17deg);
+  filter:none;
+  z-index:4;
+}
+.hero .art.specimen-art .bug-plate-butterfly{
+  right:13%;
+  top:12%;
+  width:27%;
+  transform:rotate(27deg);
+  filter:none;
+  z-index:4;
+}
+.hero .art.specimen-art .specimen-tag,.hero .art.specimen-art .plate-caption{z-index:6}
+@media(max-width:900px){
+  .hero .art.specimen-art .field-coffee-plate{width:40%;right:-10%;bottom:-12%}
+  .hero .art.specimen-art .field-mimosa-plate{width:31%;right:-6%;top:-16%}
+}
+@media(max-width:600px){
+  .hero .art.specimen-art .field-coffee-plate{width:39%;right:-7%;bottom:-10%}
+  .hero .art.specimen-art .field-mimosa-plate{width:28%;right:-3%;top:-13%;transform:rotate(16deg)}
+  .hero .art.specimen-art .bug-plate-stag{width:43%;left:20%;top:25%}
+  .hero .art.specimen-art .bug-plate-butterfly{width:26%;right:15%;top:10%}
+}
