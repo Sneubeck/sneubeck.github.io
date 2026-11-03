@@ -314,81 +314,30 @@ section[id]{scroll-margin-top:20px}
 .writing-section .writing-row:hover,
 .writing-section .writing-row:focus-visible{background-color:rgba(247,241,229,.84)}
 
-/* Naturalist journal botanical overflow and sage resume field */
-/* A solid leaf-green leaf in the journal, with no dotted paper grain in Resume. */
-.resume-section{
-  background:var(--sage);
-  background-image:none!important;
-  border-top:0;
-  border-bottom:0;
-}
-.resume-section .skills{background:transparent!important}
-.resume-section .education{background:transparent}
-/* Pressed botanical specimens grow beyond the drawing frame, not beyond page edges. */
-.hero{overflow:clip}
-.hero .art.specimen-art{
-  overflow:visible;
-  isolation:isolate;
-  background:linear-gradient(153deg,rgba(255,250,240,.85),rgba(231,221,200,.24));
-  border-color:rgba(38,60,53,.34);
-}
-.hero .art.specimen-art::before{
-  left:8%;
-  top:8%;
-  width:76%;
-  height:78%;
-  background:rgba(109,120,96,.30);
-  border-radius:55% 45% 42% 58%/47% 58% 42% 53%;
-  transform:rotate(-17deg);
-  z-index:0;
-}
-.hero .art.specimen-art::after{opacity:.18;z-index:0}
-.hero .art.specimen-art .field-art{
-  position:absolute;
-  pointer-events:none;
-  max-width:none;
-  filter:none;
-}
-.hero .art.specimen-art .field-coffee-plate{
-  width:48%;
-  right:-19%;
-  bottom:-15%;
-  transform:rotate(8deg);
-  z-index:5;
-  opacity:.95;
-}
-.hero .art.specimen-art .field-mimosa-plate{
-  width:35%;
-  right:-12%;
-  top:-23%;
-  transform:rotate(24deg);
-  z-index:3;
-  opacity:.91;
-}
-.hero .art.specimen-art .bug-plate-stag{
-  left:18%;
-  top:25%;
-  width:42%;
-  transform:rotate(-17deg);
-  filter:none;
-  z-index:4;
-}
-.hero .art.specimen-art .bug-plate-butterfly{
-  right:13%;
-  top:12%;
-  width:27%;
-  transform:rotate(27deg);
-  filter:none;
-  z-index:4;
-}
-.hero .art.specimen-art .specimen-tag,.hero .art.specimen-art .plate-caption{z-index:6}
-@media(max-width:900px){
-  .hero .art.specimen-art .field-coffee-plate{width:40%;right:-10%;bottom:-12%}
-  .hero .art.specimen-art .field-mimosa-plate{width:31%;right:-6%;top:-16%}
-}
-@media(max-width:600px){
-  .hero .art.specimen-art .field-coffee-plate{width:39%;right:-7%;bottom:-10%}
-  .hero .art.specimen-art .field-mimosa-plate{width:28%;right:-3%;top:-13%;transform:rotate(16deg)}
-  .hero .art.specimen-art .bug-plate-stag{width:43%;left:20%;top:25%}
-  .hero .art.specimen-art .bug-plate-butterfly{width:26%;right:15%;top:10%}
-}
+/* VINTAGE FIELD NOTES: distinct neighboring paper surfaces and quiet specimen plate. */
+.hero{background-color:var(--cream);background-image:radial-gradient(rgba(79,67,45,.055) .5px,transparent .75px);background-size:7px 7px;overflow:hidden}
+.about-section{background-color:var(--white);background-image:linear-gradient(90deg,transparent 96%,rgba(38,60,53,.035) 96%);background-size:32px 32px}
+.resume-section{background-color:var(--sage);background-image:none!important;border:0}
+.resume-section .skills,.resume-section .education{background-color:transparent!important;background-image:none!important}
+.writing-section{background-color:var(--cream);background-image:radial-gradient(rgba(79,67,45,.055) .5px,transparent .75px);background-size:7px 7px;border:0;box-shadow:none}
+.contact-band{background-color:var(--ink);background-image:none}
+.hero .art.specimen-art{position:relative;isolation:isolate;overflow:visible;height:490px;width:100%;min-width:0;background-color:#f4eddd;background-image:linear-gradient(90deg,transparent 55px,rgba(196,102,75,.22) 56px,transparent 57px),repeating-linear-gradient(0deg,transparent 0,transparent 31px,rgba(38,60,53,.055) 32px);border:1px solid rgba(38,60,53,.28);box-shadow:10px 13px 0 rgba(38,60,53,.07);transform:rotate(1.6deg)}
+.hero .art.specimen-art::before,.hero .art.specimen-art::after{content:none!important;display:none!important}
+.hero .art.specimen-art .plate-header,.hero .art.specimen-art .plate-footer{position:absolute;left:19px;right:19px;display:flex;justify-content:space-between;gap:10px;font-size:10px;font-weight:700;letter-spacing:.11em;color:var(--ink);z-index:5}
+.hero .art.specimen-art .plate-header{top:18px;border-bottom:1px solid rgba(38,60,53,.35);padding-bottom:12px}
+.hero .art.specimen-art .plate-footer{bottom:16px;border-top:1px solid rgba(38,60,53,.32);padding-top:10px;font-size:9px}
+.hero .art.specimen-art .plate-figure{position:absolute;z-index:2}
+.hero .art.specimen-art .figure-beetle{left:13%;top:18%;width:49%;height:62%}
+.hero .art.specimen-art .figure-butterfly{right:7%;top:14%;width:32%;height:43%}
+.hero .art.specimen-art .specimen-insect{display:block;position:absolute;max-width:none;pointer-events:none;user-select:none;object-fit:contain;filter:none}
+.hero .art.specimen-art .specimen-stag{width:85%;height:85%;left:8%;top:8%;transform:rotate(-12deg)}
+.hero .art.specimen-art .specimen-butterfly{width:100%;height:86%;left:0;top:0;transform:rotate(19deg)}
+.hero .art.specimen-art .specimen-visitor{width:18%;height:18%;right:9%;bottom:19%;transform:rotate(-24deg);z-index:4}
+.hero .art.specimen-art .figure-number{position:absolute;left:0;top:0;font-family:'Fraunces',Georgia,serif;font-size:21px;color:var(--rust);line-height:1;z-index:5}
+.hero .art.specimen-art .figure-annotation{position:absolute;z-index:5;font-family:'Fraunces',Georgia,serif;font-size:14px;font-style:italic;color:var(--ink);line-height:1.2}
+.hero .art.specimen-art .figure-annotation small{display:block;font-family:'DM Sans',Arial,sans-serif;font-size:9px;font-style:normal;letter-spacing:.06em;text-transform:uppercase;margin-top:4px}
+.hero .art.specimen-art .beetle-annotation{left:10%;bottom:-6%}
+.hero .art.specimen-art .butterfly-annotation{right:-3%;bottom:-8%}
+.hero .art.specimen-art .plate-side-note{position:absolute;right:11%;bottom:11%;width:32%;font-family:'Fraunces',Georgia,serif;font-style:italic;font-size:15px;line-height:1.3;transform:rotate(-6deg);color:var(--olive);z-index:3}
+@media(max-width:900px){.hero .art.specimen-art{max-width:490px;height:440px;transform:rotate(.9deg);margin:32px auto 5px}.hero .art.specimen-art .figure-beetle{left:15%;top:18%}}
+@media(max-width:600px){.hero .art.specimen-art{height:315px;margin:25px auto 5px}.hero .art.specimen-art .plate-header{left:13px;right:13px;top:12px;font-size:8px;padding-bottom:8px}.hero .art.specimen-art .plate-footer{left:13px;right:13px;bottom:9px;font-size:7px;padding-top:7px}.hero .art.specimen-art .figure-beetle{left:12%;top:19%;width:51%;height:57%}.hero .art.specimen-art .figure-butterfly{right:6%;top:17%;width:32%;height:41%}.hero .art.specimen-art .figure-number{font-size:15px}.hero .art.specimen-art .figure-annotation{font-size:11px}.hero .art.specimen-art .figure-annotation small{font-size:7px}.hero .art.specimen-art .specimen-visitor{width:16%;height:16%;right:8%;bottom:17%}.hero .art.specimen-art .plate-side-note{font-size:10px;right:10%;bottom:11%}}
