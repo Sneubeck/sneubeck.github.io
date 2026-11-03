@@ -3,7 +3,6 @@ import json
 
 AUTHOR = "Shelby Lee Neubeck"
 SITENAME = "Shelby Lee Neubeck"
-SITESUBTITLE = "Words, communities & the occasional bug."
 SITEURL = ""
 PATH = "content"
 TIMEZONE = "Europe/Madrid"
@@ -13,19 +12,22 @@ DISPLAY_PAGES_ON_MENU = False
 DEFAULT_PAGINATION = False
 RELATIVE_URLS = True
 DELETE_OUTPUT_DIRECTORY = True
-ARTICLE_URL = "blog/{slug}/"
-ARTICLE_SAVE_AS = "blog/{slug}/index.html"
-ARCHIVES_SAVE_AS = "blog/index.html"
-DIRECT_TEMPLATES = ["index", "writing", "resume", "archives"]
-WRITING_SAVE_AS = "writing.html"
-RESUME_SAVE_AS = "resume.html"
+
+# The public portfolio is intentionally one page. Pelican stays in place for future blogging.
+DIRECT_TEMPLATES = ["index"]
+INDEX_SAVE_AS = "index.html"
+ARTICLE_SAVE_AS = ""
 AUTHOR_SAVE_AS = ""
 AUTHORS_SAVE_AS = ""
 CATEGORY_SAVE_AS = ""
 CATEGORIES_SAVE_AS = ""
 TAG_SAVE_AS = ""
 TAGS_SAVE_AS = ""
-FEED_ALL_ATOM = "feeds/all.atom.xml"
+ARCHIVES_SAVE_AS = ""
+FEED_ALL_ATOM = None
+FEED_ALL_RSS = None
+FEED_ATOM = None
+FEED_RSS = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None

@@ -1,40 +1,37 @@
-# Shelby Lee Neubeck — portfolio
+# Shelby Lee Neubeck — one-page portfolio
 
-A Python-powered portfolio and future blog, built with [Pelican](https://getpelican.com/) and a custom Jinja2 theme.
+Python + Pelican + Jinja2 static site with a mid-century-inspired custom design. The homepage has anchor sections for About, Resume, Writing, and Contact. Blog content remains a future capability but is not rendered or linked until activated intentionally.
 
 ## Preview locally
 
 ```bash
-python -m venv .venv
+git switch portfolio/pelican-first-draft
+git pull
+python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 pelican content -s pelicanconf.py
-python -m http.server 8000 -d output
+python3 -m http.server 8000 -d output
 ```
 
-Open http://localhost:8000.
+Visit http://localhost:8000. If you already have the environment, skip creating it and installing requirements. Stop with Ctrl+C.
 
-## Add a blog post
+## Updating content
 
-Create `content/your-post.md`:
+- Edit the one-page template in `theme/templates/index.html`.
+- Edit styles in `theme/static/css/main.css`.
+- Edit linked writing samples in `data/writing.json`.
+- Replace photo placeholders with images you approve; currently no personal images are included.
+- Resume and biography are from the provided documents/text, with the full supplied resume bullets and skill categories.
 
-```markdown
-Title: Your post title
-Date: 2026-11-03 12:00
-Category: Notes
-Slug: your-post-title
+## Email privacy
 
-Write your post in Markdown here.
-```
+The site does not print a literal email address into the generated HTML. Visitors can reveal a link with a click; the address is assembled by JavaScript from character codes on demand. This reduces simple scraping, but **cannot eliminate spam**: automated browsers may execute JavaScript, and any public email address can be copied. For stronger protection, use a privacy-preserving contact form or LinkedIn messages only. A previous commit on this public branch included a literal email in source, so changing the current HTML does not erase it from Git history.
 
-Run `pelican content -s pelicanconf.py` to rebuild. Blog posts will appear under `/blog/`, with an Atom feed at `/feeds/all.atom.xml`.
+## Publishing
 
-## Edit writing samples
+This is a draft PR. GitHub Pages publishing is not configured. No automatic deployment is performed.
 
-Update `data/writing.json`. Each entry has `title`, `category`, `publication`, and `url`. The homepage and writing archive use the same data.
+## Future blog
 
-## Publish later (not enabled yet)
-
-This branch intentionally does **not** configure GitHub Pages or automatic deployment. After reviewing and merging, configure GitHub Pages with a GitHub Actions deployment workflow. Until then, this is a source-code preview only.
-
-All copy and links should be reviewed before publication. The writing archive is curated from the provided Google Doc; additional samples can be added at any time.
+Pelican and blog templates remain in source for later. When you are ready, enable an article path, archive and feed settings in `pelicanconf.py`, then add Markdown posts to `content/`.

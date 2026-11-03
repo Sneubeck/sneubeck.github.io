@@ -1,28 +1,42 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#f7f1e5">
-  <meta name="description" content="{% block description %}Shelby Lee Neubeck — developer community, content, technical writing and events.{% endblock %}">
-  <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
-  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css">
-  <link rel="alternate" type="application/atom+xml" title="Blog feed" href="{{ SITEURL }}/feeds/all.atom.xml">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f7f1e5">
+<meta name="description" content="Shelby Lee Neubeck — developer-focused marketing, front-end development, open source advocacy, community, and technical writing.">
+<title>Shelby Lee Neubeck — Developer Community, Writing & Marketing</title>
+<link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <div class="site-shell">
-  <header class="site-header">
-    <a class="wordmark" href="{{ SITEURL }}/" aria-label="Shelby Lee Neubeck home">shelby<span class="dot">✳</span>neubeck</a>
-    <nav aria-label="Main navigation">
-      <a href="{{ SITEURL }}/#work">Work</a><a href="{{ SITEURL }}/writing.html">Writing</a><a href="{{ SITEURL }}/resume.html">About / Resume</a><a href="{{ SITEURL }}/blog/">Blog</a>
-    </nav>
-  </header>
-  <main id="main">{% block content %}{% endblock %}</main>
-  <footer class="site-footer">
-    <span>Made with curiosity, caffeine & a little chaos. © {{ AUTHOR }}</span>
-    <span><a href="mailto:neubeckshelby@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/shelbyneubeck/" rel="me">LinkedIn</a> · <a href="https://github.com/Sneubeck" rel="me">GitHub</a></span>
-  </footer>
+<header class="site-header">
+ <a class="wordmark" href="#top" aria-label="Shelby Lee Neubeck home">shelby lee<span class="dot">✳</span>neubeck</a>
+ <nav aria-label="Main navigation"><a href="#about">About</a><a href="#resume">Resume</a><a href="#writing">Writing</a><a href="#contact">Contact</a></nav>
+</header>
+<main id="main">{% block content %}{% endblock %}</main>
+<footer class="site-footer">
+<span>Made with curiosity, good stories & an unreasonable interest in insects. © Shelby Lee Neubeck</span>
+<span><a href="#top">Back to top ↑</a> · <a href="https://www.linkedin.com/in/shelbyneubeck/" rel="me noopener noreferrer" target="_blank">LinkedIn</a> · <a href="https://github.com/Sneubeck" rel="me noopener noreferrer" target="_blank">GitHub</a></span>
+</footer>
 </div>
-</body>
-</html>
+<script>
+(() => {
+const button=document.querySelector('[data-contact-reveal]');
+if (!button) return;
+// Construct the address only after user interaction; it isn't exposed in page markup.
+// This reduces basic harvesting, but no public email address is completely bot-proof.
+button.addEventListener('click', () => {
+ const local=[110,101,117,98,101,99,107,115,104,101,108,98,121].map(x=>String.fromCharCode(x)).join('');
+ const domain=[103,109,97,105,108,46,99,111,109].map(x=>String.fromCharCode(x)).join('');
+ const address=local+'@'+domain;
+ const link=document.createElement('a');
+ link.href='mailto:'+address;
+ link.textContent='Email Shelby ↗';
+ link.className='btn dark';
+ button.replaceWith(link);
+ link.focus();
+});
+})();
+</script>
+</body></html>
