@@ -713,3 +713,51 @@ section[id]{scroll-margin-top:20px}
   .resume-section .botanical-resume-oak{width:77px;right:-24px;top:25%;opacity:.36}
   .writing-section .botanical-writing-sprig{width:89px;left:-24px;bottom:5%;opacity:.39}
 }
+
+/* November portfolio refresh: one-leaf silhouettes, legible controls and safe specimen spacing. */
+.hero .eyebrow{margin:0 0 6px;padding:0;line-height:1.4}
+.hero .hero-copy h1{margin:0 0 22px;line-height:1.08}
+.hero .hero-copy{align-self:center}
+.about-section .specimen-bar,.contact-band .contact-annotation{display:none}
+.organic-leaf{position:absolute;display:block;width:90px;height:150px;pointer-events:none;user-select:none;z-index:1;
+  border-radius:4% 92% 4% 92%;background:rgba(100,130,88,.26);
+  box-shadow:inset 2px -2px 0 rgba(52,87,59,.16);transform-origin:50% 80%}
+.organic-leaf::after{content:"";position:absolute;left:49%;top:13%;width:1px;height:75%;background:rgba(52,87,59,.33);transform:rotate(22deg)}
+.hero .hero-photo-column .botanical-hero-sprig{width:68px;height:109px;right:3%;top:0;transform:rotate(-22deg);opacity:.75}
+.about-section .botanical-about-fern{width:74px;height:127px;left:-24px;bottom:8%;transform:rotate(19deg);opacity:.75}
+.resume-section .botanical-resume-oak{width:82px;height:127px;right:-29px;top:28%;transform:rotate(-14deg);opacity:.65}
+.writing-section .botanical-writing-sprig{width:70px;height:123px;left:-22px;bottom:9%;transform:rotate(23deg);opacity:.7}
+.hero .hero-photo-column .bug-photo-stag{left:-7px;top:41%;width:53px}
+.hero .hero-photo-column .bug-photo-leaf{right:-7px;bottom:1%;width:40px}
+.about-vignette .vignette-beetle{width:40%;height:66%;left:12%;top:24%;transform:rotate(-13deg)}
+.about-vignette .vignette-butterfly{width:28%;height:34%;right:5%;top:7%;transform:rotate(19deg)}
+.about-vignette .vignette-leaf{width:15%;height:20%;right:9%;bottom:11%;transform:rotate(-24deg)}
+.contact-band{gap:28px}
+.contact-band > div:first-of-type{flex:1;min-width:0}
+.contact-band .contact-actions{flex:0 0 auto;min-width:230px;padding-right:72px}
+.contact-band .btn.dark,.contact-band a.btn.dark{background:#fffaf0;color:#263c35;border:2px solid #fffaf0}
+.contact-band .btn.secondary,.contact-band button.btn.secondary{background:#e8b95f;color:#263c35;border:2px solid #e8b95f}
+.contact-band .btn.dark:hover,.contact-band .btn.dark:focus-visible{background:#e7ddc8;color:#263c35;border-color:#e7ddc8}
+.contact-band .btn.secondary:hover,.contact-band .btn.secondary:focus-visible{background:#fffaf0;color:#263c35;border-color:#fffaf0}
+.contact-band .btn:focus-visible{outline:3px solid #e8b95f;outline-offset:3px}
+@media(max-width:900px){
+  .hero .hero-photo-column .botanical-hero-sprig{width:56px;height:91px;right:3%;top:0}
+  .about-section .botanical-about-fern{width:58px;height:98px;left:-22px}
+  .resume-section .botanical-resume-oak{width:64px;height:104px;right:-25px}
+  .writing-section .botanical-writing-sprig{width:54px;height:92px}
+  .contact-band .contact-actions{padding-right:56px}
+}
+@media(max-width:600px){
+  .hero .hero-copy h1{margin-bottom:17px}
+  .hero .hero-photo-column .botanical-hero-sprig{width:44px;height:72px;right:2%}
+  .about-section .botanical-about-fern{width:45px;height:76px;left:-18px}
+  .resume-section .botanical-resume-oak{width:50px;height:83px;right:-19px}
+  .writing-section .botanical-writing-sprig{width:44px;height:77px;left:-16px}
+  .hero .hero-photo-column .bug-photo-stag{left:-2px;top:43%;width:35px}
+  .hero .hero-photo-column .bug-photo-leaf{right:0;bottom:1%;width:30px}
+  .about-vignette .vignette-beetle{width:40%;height:65%;left:12%;top:23%}
+  .about-vignette .vignette-butterfly{width:27%;height:34%;right:4%;top:5%}
+  .about-vignette .vignette-leaf{width:14%;height:19%;right:8%;bottom:11%}
+  .contact-band .contact-actions{padding-right:45px;min-width:0;align-items:stretch}
+  .contact-band .contact-actions .btn{margin-top:0;text-align:center}
+}
