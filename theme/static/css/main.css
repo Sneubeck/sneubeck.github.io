@@ -68,3 +68,23 @@ body{background-image:radial-gradient(rgba(79,67,45,.055) .5px,transparent .75px
 .contact-annotation{position:absolute;top:10px;right:5.5%;font-size:9px;font-weight:700;letter-spacing:.18em}
 @media(max-width:900px){.archive-header{grid-template-columns:135px 1fr}.archive-header span:last-child{display:none}.hero .art{height:400px}.hero .art:before{width:270px;height:320px}.beetle-tag{top:12%}.plate-caption small{display:none}}
 @media(max-width:600px){.site-header:after{display:none}.hero .art{height:310px}.hero .art:before{width:220px;height:260px}.hero .beetle{top:24%;width:145px}.hero .hero-moth{width:80px;top:4%}.hero .art-stamp{width:70px;height:70px;bottom:15%;font-size:8px}.specimen-tag{font-size:9px}.specimen-tag small{font-size:9px}.plate-caption{font-size:8px}.photo-marginalia{display:none}.archive-header{display:none}.writing-list{border-top:2px solid var(--ink)}.resume-section .timeline article{padding-left:15px}}
+
+/* Editorial polish: let specimens carry the theme, not template conventions. */
+.hero-copy:before{display:none!important;content:none!important}
+.hero h1{letter-spacing:-.052em;line-height:1.07}
+.section-heading h2,.about-copy h2,.skills h2,.contact-band h2{letter-spacing:-.035em}
+.section-kicker{font-size:13px;letter-spacing:.035em;text-transform:none;font-weight:600}
+.section-kicker:before{content:none!important}
+.eyebrow{font-size:15px;font-weight:600;letter-spacing:0;border:0}
+.resume-section .timeline .time{font-size:12px;letter-spacing:.05em}
+.resume-section .skills{background-image:none}
+.resume-section .skill-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:25px 50px}
+.skill-grid h3{font-size:22px;line-height:1.3}
+.skill-grid>div{border-bottom:1px solid var(--rule);padding-bottom:19px}
+.skill-icon{height:28px;width:28px;font-size:17px}
+.photo-placeholder,.photo-small{box-shadow:3px 4px 0 rgba(38,60,53,.06)}
+.hero .art{box-shadow:none}
+.writing-row{padding-block:19px}
+.writing-title{font-size:21px}
+.site-header nav{font-size:14px}
+@media(max-width:600px){.resume-section .skill-grid{grid-template-columns:1fr}.site-header nav{font-size:13px}}
