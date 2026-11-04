@@ -1134,3 +1134,121 @@ section[id] {
   .scatter-contact-moth { width:30px; left:2%; bottom:3%; }
   .note-moth { left:0; top:0; font-size:8px; }
 }
+
+/* Mobile editorial layout: portraits first and fewer, more intentional specimens. */
+@media (max-width:700px) {
+  .hero {
+    position:relative;
+    row-gap:8px;
+    padding-top:24px;
+  }
+  .hero-photo-column {
+    order:-1;
+    width:min(100%,380px);
+    min-height:410px;
+    margin:0 auto 12px;
+    padding:30px 42px 62px;
+  }
+  .hero-copy {
+    order:1;
+  }
+  .hero .photo-placeholder:not(.photo-small) {
+    height:305px;
+  }
+  .hero .photo-small {
+    width:42%;
+    height:118px;
+  }
+  /* Reserve the photos for one beetle and one bee; omit tiny decorative clutter. */
+  .hero > .scatter-bug,
+  .hero-photo-column .bug-hero-butterfly,
+  .hero-photo-column .bug-photo-leaf {
+    display:none;
+  }
+  .hero-photo-column .bug-photo-stag {
+    display:block;
+    width:82px;
+    left:-8px;
+    top:33%;
+    transform:rotate(-24deg);
+  }
+  .hero-photo-column .bug-hero-bee {
+    display:block;
+    width:75px;
+    left:auto;
+    right:-2px;
+    top:1%;
+    transform:rotate(18deg);
+    z-index:9;
+    opacity:1;
+  }
+  /* The specimen plate is already first in the About grid. Give it room to shine. */
+  .about-grid {
+    gap:20px;
+  }
+  .about-specimen {
+    width:min(100%,390px);
+    height:350px;
+    margin:0 auto 6px;
+  }
+  .about-section > .scatter-bug {
+    display:none;
+  }
+  .specimen-moth {
+    width:24%;
+    height:27%;
+  }
+  .specimen-butterfly {
+    width:31%;
+  }
+  .specimen-leaf {
+    width:18%;
+  }
+  .note-moth {
+    top:0;
+    left:0;
+    font-size:9px;
+  }
+  /* Larger section punctuation: only one distinct insect per lower section. */
+  .resume-section > .field-bug,
+  .writing-section > .field-bug,
+  .contact-band > .field-bug {
+    display:none;
+  }
+  .resume-section > .bug-resume-dragonfly {
+    display:block;
+    width:76px;
+    left:auto;
+    right:0;
+    top:86px;
+    transform:rotate(28deg);
+    opacity:.8;
+  }
+  .writing-section > .bug-writing-moth {
+    display:block;
+    width:83px;
+    left:auto;
+    right:0;
+    top:10px;
+    transform:rotate(16deg);
+    opacity:.83;
+  }
+  .contact-band > .bug-contact-bee {
+    display:block;
+    width:78px;
+    left:auto;
+    right:0;
+    top:8px;
+    transform:rotate(-15deg);
+    opacity:.9;
+  }
+  .writing-section > .section-heading {
+    padding-right:80px;
+  }
+  .resume-section .section-heading {
+    padding-right:74px;
+  }
+  .contact-band {
+    padding-top:92px;
+  }
+}
