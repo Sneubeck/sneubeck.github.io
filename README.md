@@ -5,7 +5,7 @@ Python + Pelican + Jinja2 static site with a mid-century-inspired custom design.
 ## Preview locally
 
 ```bash
-git switch portfolio/pelican-first-draft
+git switch portfolio/leaf-and-content-refresh
 git pull
 python3 -m venv .venv
 source .venv/bin/activate
@@ -21,7 +21,7 @@ Visit http://localhost:8000. If you already have the environment, skip creating 
 - Edit the one-page template in `theme/templates/index.html`.
 - Edit styles in `theme/static/css/main.css`.
 - Edit linked writing samples in `data/writing.json`.
-- Replace photo placeholders with images you approve; currently no personal images are included.
+- Hero photos are `theme/static/img/shelby-hero-primary.webp` and `theme/static/img/shelby-hero-secondary.webp`. Both are committed and used by the homepage.
 - Resume and biography are from the provided documents/text, with the full supplied resume bullets and skill categories.
 
 ## Email privacy
@@ -30,7 +30,7 @@ The site does not print a literal email address into the generated HTML. Visitor
 
 ## Publishing
 
-This is a draft PR. GitHub Pages publishing is not configured. No automatic deployment is performed.
+The portfolio is being developed on a feature branch and reviewed through a pull request. Confirm GitHub Pages configuration separately before publishing.
 
 ## Future blog
 
