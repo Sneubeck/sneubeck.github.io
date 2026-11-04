@@ -710,11 +710,6 @@ section[id] {
   min-width:230px;
   padding-right:72px
 }
-.contact-actions small {
-  max-width:250px;
-  font-size:11px;
-  color:rgba(255,250,240,.82)
-}
 .contact-band .btn.dark {
   background:var(--white);
   color:var(--ink);
@@ -1029,5 +1024,69 @@ section[id] {
   }
   .resume-download {
     margin-left:0
+  }
+}
+
+.bug-hero-bee {
+  width:64px;
+  left:0;
+  top:5%;
+  transform:rotate(-16deg);
+  z-index:7
+}
+.specimen-moth {
+  width:21%;
+  height:23%;
+  left:3%;
+  top:4%;
+  transform:rotate(-15deg)
+}
+.bug-resume-bee {
+  width:56px;
+  right:3%;
+  top:26%;
+  transform:rotate(15deg);
+  opacity:.9
+}
+.bug-writing-moth {
+  width:74px;
+  left:1%;
+  top:32%;
+  transform:rotate(-12deg);
+  opacity:.86
+}
+.bug-contact-bee {
+  width:53px;
+  left:49%;
+  top:6%;
+  transform:rotate(18deg);
+  opacity:.9
+}
+@media(max-width:700px) {
+  .bug-hero-bee {
+    width:38px;
+    left:0;
+    top:2%
+  }
+  .specimen-moth {
+    width:18%;
+    left:4%;
+    top:3%
+  }
+  .bug-resume-bee {
+    width:31px;
+    right:1%;
+    top:29%
+  }
+  .bug-writing-moth {
+    width:38px;
+    left:0;
+    top:26%
+  }
+  .bug-contact-bee {
+    width:32px;
+    left:auto;
+    right:3%;
+    top:46%
   }
 }
