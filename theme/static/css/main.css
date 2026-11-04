@@ -558,78 +558,6 @@ section[id]{scroll-margin-top:20px}
 .contact-band .contact-actions small{color:rgba(255,250,240,.80)}
 .contact-band .btn.secondary{color:var(--ink);background:var(--cream);border-color:var(--cream)}
 .contact-band .btn.secondary:hover{background:var(--white)}
-/* Visible, understated foliage in the page margins, not separate illustrations. */
-.about-section,.resume-section,.writing-section{
-  position:relative;
-  isolation:isolate;
-  overflow:clip;
-}
-.about-section::before,
-.resume-section::before,
-.writing-section::before{
-  content:"";
-  position:absolute;
-  display:block;
-  pointer-events:none;
-  z-index:1;
-  width:150px;
-  height:265px;
-  border-left:2px solid rgba(77,105,71,.60);
-  border-radius:65% 0 0 40%;
-  background:
-    radial-gradient(ellipse 17px 41px at 43px 54px,rgba(91,119,77,.48) 0 78%,transparent 82%),
-    radial-gradient(ellipse 15px 34px at 10px 105px,rgba(91,119,77,.46) 0 78%,transparent 82%),
-    radial-gradient(ellipse 18px 37px at 47px 151px,rgba(91,119,77,.44) 0 78%,transparent 82%),
-    radial-gradient(ellipse 13px 29px at 11px 207px,rgba(91,119,77,.39) 0 78%,transparent 82%);
-}
-.about-section::before{
-  left:9px;
-  bottom:5%;
-  opacity:.72;
-  transform:rotate(-11deg);
-}
-.resume-section::before{
-  right:8px;
-  top:15%;
-  opacity:.63;
-  transform:scaleX(-1) rotate(-9deg);
-}
-.writing-section::before{
-  left:12px;
-  bottom:10%;
-  opacity:.67;
-  transform:rotate(11deg);
-}
-.about-section .about-grid,
-.about-section .specimen-bar,
-.resume-section .resume-document,
-.resume-section .section-heading,
-.resume-section .education,
-.writing-section .section-heading,
-.writing-section .writing-intro,
-.writing-section .filter-bar,
-.writing-section .writing-list,
-.writing-section .archive-header{
-  position:relative;
-  z-index:2;
-}
-@media(max-width:900px){
- .about-section::before,.resume-section::before,.writing-section::before{
-   width:110px;
-   height:215px;
-   opacity:.46;
- }
-}
-@media(max-width:600px){
- .about-section::before,.resume-section::before,.writing-section::before{
-   width:82px;
-   height:170px;
-   opacity:.32;
- }
- .about-section::before{left:2px;bottom:2%}
- .resume-section::before{right:2px;top:8%}
- .writing-section::before{left:2px;bottom:4%}
-}
 /* Make wandering insects read as marginalia, not foreground obstructions. */
 .about-section .bug-about-ladybug{z-index:3}
 .resume-section .bug-resume-dragonfly,.resume-section .bug-resume-scarab{z-index:1;opacity:.65}
@@ -656,77 +584,11 @@ section[id]{scroll-margin-top:20px}
  .site-footer{line-height:1.6}
 }
 
-/* Pressed botanical vectors: same limited flat-fill palette as the original insect SVGs.
-   Replace provisional CSS-drawn foliage, leaving typography unobstructed. */
-.about-section::before,
-.resume-section::before,
-.writing-section::before{content:none!important;display:none!important}
-.botanical-press{
-  position:absolute;
-  display:block;
-  max-width:none;
-  height:auto;
-  pointer-events:none;
-  user-select:none;
-  filter:none;
-  z-index:1;
-  object-fit:contain;
-}
-.hero .hero-photo-column .botanical-hero-sprig{
-  width:112px;
-  right:-13px;
-  top:5px;
-  transform:rotate(26deg);
-  opacity:.77;
-  z-index:1;
-}
-.about-section .botanical-about-fern{
-  width:165px;
-  left:-17px;
-  bottom:8%;
-  transform:rotate(-21deg);
-  opacity:.66;
-}
-.resume-section .botanical-resume-oak{
-  width:116px;
-  right:-21px;
-  top:27%;
-  transform:rotate(31deg);
-  opacity:.50;
-}
-.writing-section .botanical-writing-sprig{
-  width:144px;
-  left:-34px;
-  bottom:9%;
-  transform:rotate(-22deg);
-  opacity:.57;
-}
-@media(max-width:900px){
-  .hero .hero-photo-column .botanical-hero-sprig{width:92px;right:-4px;top:8px}
-  .about-section .botanical-about-fern{width:125px;left:-22px;bottom:3%}
-  .resume-section .botanical-resume-oak{width:91px;right:-20px;top:34%;opacity:.42}
-  .writing-section .botanical-writing-sprig{width:105px;left:-29px}
-}
-@media(max-width:600px){
-  .hero .hero-photo-column .botanical-hero-sprig{width:76px;right:-8px;top:9px;opacity:.63}
-  .about-section .botanical-about-fern{width:100px;left:-27px;bottom:1%;opacity:.49}
-  .resume-section .botanical-resume-oak{width:77px;right:-24px;top:25%;opacity:.36}
-  .writing-section .botanical-writing-sprig{width:89px;left:-24px;bottom:5%;opacity:.39}
-}
-
 /* November portfolio refresh: one-leaf silhouettes, legible controls and safe specimen spacing. */
 .hero .eyebrow{margin:0 0 6px;padding:0;line-height:1.4}
 .hero .hero-copy h1{margin:0 0 22px;line-height:1.08}
 .hero .hero-copy{align-self:center}
 .about-section .specimen-bar,.contact-band .contact-annotation{display:none}
-.organic-leaf{position:absolute;display:block;width:90px;height:150px;pointer-events:none;user-select:none;z-index:1;
-  border-radius:4% 92% 4% 92%;background:rgba(100,130,88,.26);
-  box-shadow:inset 2px -2px 0 rgba(52,87,59,.16);transform-origin:50% 80%}
-.organic-leaf::after{content:"";position:absolute;left:49%;top:13%;width:1px;height:75%;background:rgba(52,87,59,.33);transform:rotate(22deg)}
-.hero .hero-photo-column .botanical-hero-sprig{width:68px;height:109px;right:3%;top:0;transform:rotate(-22deg);opacity:.75}
-.about-section .botanical-about-fern{width:74px;height:127px;left:-24px;bottom:8%;transform:rotate(19deg);opacity:.75}
-.resume-section .botanical-resume-oak{width:82px;height:127px;right:-29px;top:28%;transform:rotate(-14deg);opacity:.65}
-.writing-section .botanical-writing-sprig{width:70px;height:123px;left:-22px;bottom:9%;transform:rotate(23deg);opacity:.7}
 .hero .hero-photo-column .bug-photo-stag{left:-7px;top:41%;width:53px}
 .hero .hero-photo-column .bug-photo-leaf{right:-7px;bottom:1%;width:40px}
 .about-vignette .vignette-beetle{width:40%;height:66%;left:12%;top:24%;transform:rotate(-13deg)}
@@ -741,18 +603,10 @@ section[id]{scroll-margin-top:20px}
 .contact-band .btn.secondary:hover,.contact-band .btn.secondary:focus-visible{background:#fffaf0;color:#263c35;border-color:#fffaf0}
 .contact-band .btn:focus-visible{outline:3px solid #e8b95f;outline-offset:3px}
 @media(max-width:900px){
-  .hero .hero-photo-column .botanical-hero-sprig{width:56px;height:91px;right:3%;top:0}
-  .about-section .botanical-about-fern{width:58px;height:98px;left:-22px}
-  .resume-section .botanical-resume-oak{width:64px;height:104px;right:-25px}
-  .writing-section .botanical-writing-sprig{width:54px;height:92px}
   .contact-band .contact-actions{padding-right:56px}
 }
 @media(max-width:600px){
   .hero .hero-copy h1{margin-bottom:17px}
-  .hero .hero-photo-column .botanical-hero-sprig{width:44px;height:72px;right:2%}
-  .about-section .botanical-about-fern{width:45px;height:76px;left:-18px}
-  .resume-section .botanical-resume-oak{width:50px;height:83px;right:-19px}
-  .writing-section .botanical-writing-sprig{width:44px;height:77px;left:-16px}
   .hero .hero-photo-column .bug-photo-stag{left:-2px;top:43%;width:35px}
   .hero .hero-photo-column .bug-photo-leaf{right:0;bottom:1%;width:30px}
   .about-vignette .vignette-beetle{width:40%;height:65%;left:12%;top:23%}
@@ -761,3 +615,18 @@ section[id]{scroll-margin-top:20px}
   .contact-band .contact-actions{padding-right:45px;min-width:0;align-items:stretch}
   .contact-band .contact-actions .btn{margin-top:0;text-align:center}
 }
+
+/* Hero photograph pair: originals keep their natural colors and hand-taped framing.
+   Place the corresponding photo assets in theme/static/img/ before publishing. */
+.hero .hero-photo-column .hero-image-frame{position:relative;overflow:hidden}
+.hero .hero-photo-column > .hero-image-frame.photo-small{position:absolute!important;overflow:hidden}
+.hero-image-frame .photo-fallback{position:relative;z-index:1}
+.hero-image-frame .hero-image{position:absolute;inset:0;display:block;width:100%;height:100%;
+  object-fit:cover;opacity:0;transition:opacity .18s ease;z-index:2}
+.hero-image-frame .hero-image.is-loaded{opacity:1}
+.hero-image-frame .hero-image-primary{object-position:center 34%}
+.hero-image-frame .hero-image-secondary{object-position:50% 30%}
+.hero-image-frame .photo-tape{z-index:12}
+.hero-image-frame .photo-plate-id{position:absolute;z-index:11;bottom:10px;left:12px;
+  padding:3px 7px;background:rgba(255,250,240,.84);color:var(--ink)}
+@media(prefers-reduced-motion:reduce){.hero-image-frame .hero-image{transition:none}}
