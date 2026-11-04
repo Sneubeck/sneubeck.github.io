@@ -1,7 +1,8 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#f7f1e5">
 <meta name="description" content="Shelby Lee Neubeck — developer-focused marketing, front-end development, open source advocacy, and developer events & community.">
 <title>Shelby Lee Neubeck — Developer-focused Community, Events, & Marketing</title>
@@ -11,71 +12,75 @@
 <a class="skip" href="#main">Skip to content</a>
 <div class="site-shell">
 <header class="site-header">
- <a class="wordmark" href="#top" aria-label="Shelby Lee Neubeck home">Shelby Lee Neubeck</a>
- <nav aria-label="Main navigation"><a href="#about">About</a><a href="#resume">Resume</a><a href="#writing">Writing</a></nav>
+<a class="wordmark" href="#top" aria-label="Shelby Lee Neubeck home">Shelby Lee Neubeck</a>
+<nav aria-label="Main navigation">
+<a href="#about">About</a>
+<a href="#resume">Resume</a>
+<a href="#writing">Writing</a>
+</nav>
 </header>
 <main id="main">{% block content %}{% endblock %}</main>
 <footer class="site-footer">
 <span>© Shelby Lee Neubeck</span>
-<a href="https://www.linkedin.com/in/shelbyneubeck/" rel="me noopener noreferrer" target="_blank">LinkedIn</a> · <a href="https://github.com/Sneubeck" rel="me noopener noreferrer" target="_blank">GitHub</a></span>
+<span class="footer-links">
+<a href="https://www.linkedin.com/in/shelbyneubeck/" rel="me noopener noreferrer" target="_blank">LinkedIn</a>
+·
+<a href="https://github.com/Sneubeck" rel="me noopener noreferrer" target="_blank">GitHub</a>
+</span>
 </footer>
 </div>
 <script>
 (() => {
 const button=document.querySelector('[data-contact-reveal]');
 if (!button) return;
-// Construct the address only after user interaction; it isn't exposed in page markup.
-// This reduces basic harvesting, but no public email address is completely bot-proof.
 button.addEventListener('click', () => {
- const local=[110,101,117,98,101,99,107,115,104,101,108,98,121].map(x=>String.fromCharCode(x)).join('');
- const domain=[103,109,97,105,108,46,99,111,109].map(x=>String.fromCharCode(x)).join('');
- const address=local+'@'+domain;
- const link=document.createElement('a');
- link.href='mailto:'+address;
- link.textContent='Email Shelby ↗';
- link.className='btn dark';
- button.replaceWith(link);
- link.focus();
+const local=[110,101,117,98,101,99,107,115,104,101,108,98,121].map(x=>String.fromCharCode(x)).join('');
+const domain=[103,109,97,105,108,46,99,111,109].map(x=>String.fromCharCode(x)).join('');
+const address=local+'@'+domain;
+const link=document.createElement('a');
+link.href='mailto:'+address;
+link.textContent='Email Shelby ↗';
+link.className='btn dark';
+button.replaceWith(link);
+link.focus();
 });
 })();
 </script>
-
 <script>
 (() => {
-  const links = Array.from(document.querySelectorAll('.site-header nav a[href^="#"]'));
-  const sections = links.map(link => document.querySelector(link.getAttribute('href'))).filter(Boolean);
-  if (!links.length || !sections.length) return;
-  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  let ticking = false;
-  const update = () => {
-    ticking = false;
-    const offset = (document.querySelector('.site-header')?.getBoundingClientRect().height || 0) + 75;
-    let active = null;
-    for (const section of sections) {
-      if (section.getBoundingClientRect().top <= offset) active = section.id;
-    }
-    if (window.scrollY < 30) active = null;
-    for (const link of links) {
-      const current = link.hash === '#' + active;
-      link.classList.toggle('is-active', current);
-      if (current) link.setAttribute('aria-current','location');
-      else link.removeAttribute('aria-current');
-    }
-    const desiredHash = active ? '#' + active : '';
-    if (window.location.hash !== desiredHash) {
-      history.replaceState(history.state, '', window.location.pathname + window.location.search + desiredHash);
-    }
-  };
-  window.addEventListener('scroll', () => {
-    if (!ticking) { ticking = true; window.requestAnimationFrame(update); }
-  }, {passive:true});
-  window.addEventListener('resize', update);
-  window.addEventListener('load', update);
-  links.forEach(link => link.addEventListener('click', () => {
-    // Native anchor navigation handles the URL and scroll; the observer
-    // updates highlighting as the destination moves into view.
-    if (reduceMotion) window.requestAnimationFrame(update);
-  }));
+const links = Array.from(document.querySelectorAll('.site-header nav a[href^="#"]'));
+const sections = links.map(link => document.querySelector(link.getAttribute('href'))).filter(Boolean);
+if (!links.length || !sections.length) return;
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+let ticking = false;
+const update = () => {
+ticking = false;
+const offset = (document.querySelector('.site-header')?.getBoundingClientRect().height || 0) + 75;
+let active = null;
+for (const section of sections) {
+if (section.getBoundingClientRect().top <= offset) active = section.id;
+}
+if (window.scrollY < 30) active = null;
+for (const link of links) {
+const current = link.hash === '#' + active;
+link.classList.toggle('is-active', current);
+if (current) link.setAttribute('aria-current','location');
+else link.removeAttribute('aria-current');
+}
+const desiredHash = active ? '#' + active : '';
+if (window.location.hash !== desiredHash) {
+history.replaceState(history.state, '', window.location.pathname + window.location.search + desiredHash);
+}
+};
+window.addEventListener('scroll', () => {
+if (!ticking) { ticking = true; window.requestAnimationFrame(update); }
+}, {passive:true});
+window.addEventListener('resize', update);
+window.addEventListener('load', update);
+links.forEach(link => link.addEventListener('click', () => {
+if (reduceMotion) window.requestAnimationFrame(update);
+}));
 })();
 </script>
-</body></html>
+</body>
+</html>
