@@ -1090,3 +1090,47 @@ section[id] {
     top:46%
   }
 }
+
+/* Scattered field specimens: mixed species, sizes, and angles at section edges. */
+.scatter-bug { z-index:1; opacity:.7; }
+.scatter-hero-dragonfly { width:57px; left:1.4%; top:16%; transform:rotate(-41deg); opacity:.65; }
+.scatter-hero-moth { width:48px; left:47%; bottom:12%; transform:rotate(27deg); opacity:.64; }
+.scatter-about-bee { width:54px; right:2%; top:9%; transform:rotate(31deg); }
+.scatter-about-scarab { width:43px; left:3%; bottom:16%; transform:rotate(-28deg); opacity:.54; }
+.scatter-about-dragonfly { width:49px; right:5%; bottom:5%; transform:rotate(66deg); opacity:.6; }
+.scatter-resume-moth { width:67px; left:2%; top:10%; transform:rotate(20deg); }
+.scatter-resume-butterfly { width:47px; right:2%; top:35%; transform:rotate(-34deg); opacity:.58; }
+.scatter-resume-leaf { width:39px; left:1%; top:61%; transform:rotate(41deg); opacity:.53; }
+.scatter-resume-stag { width:62px; right:1%; bottom:7%; transform:rotate(-19deg); opacity:.58; }
+.scatter-writing-bee { width:45px; right:3%; top:13%; transform:rotate(-33deg); }
+.scatter-writing-dragonfly { width:57px; left:2%; top:60%; transform:rotate(54deg); opacity:.63; }
+.scatter-writing-scarab { width:42px; right:2%; top:65%; transform:rotate(12deg); opacity:.56; }
+.scatter-writing-butterfly { width:48px; left:2%; bottom:3%; transform:rotate(-21deg); opacity:.62; }
+.scatter-contact-moth { width:44px; left:3%; bottom:9%; transform:rotate(28deg); opacity:.66; }
+.scatter-contact-butterfly { width:41px; right:31%; bottom:5%; transform:rotate(-37deg); opacity:.62; }
+.note-moth { left:1%; top:0; transform:rotate(-3deg); }
+@media(max-width:900px) {
+  .scatter-bug { opacity:.45; }
+  .scatter-hero-dragonfly { left:2%; top:3%; width:42px; }
+  .scatter-hero-moth { left:auto; right:3%; bottom:4%; width:37px; }
+  .scatter-about-bee { right:2%; top:2%; width:38px; }
+  .scatter-about-scarab { left:2%; bottom:3%; width:32px; }
+  .scatter-resume-moth { width:40px; top:6%; }
+  .scatter-resume-stag { width:39px; right:1%; bottom:3%; }
+  .scatter-writing-bee { width:34px; top:4%; }
+  .scatter-contact-moth { width:35px; bottom:3%; }
+  .note-moth { left:0; top:0; }
+}
+@media(max-width:700px) {
+  .scatter-hero-moth,.scatter-about-dragonfly,.scatter-resume-butterfly,
+  .scatter-resume-leaf,.scatter-writing-dragonfly,.scatter-writing-scarab,
+  .scatter-writing-butterfly,.scatter-contact-butterfly { display:none; }
+  .scatter-hero-dragonfly { width:30px; left:2%; top:2%; }
+  .scatter-about-bee { width:28px; right:2%; top:1%; }
+  .scatter-about-scarab { width:25px; left:1%; bottom:2%; }
+  .scatter-resume-moth { width:32px; left:1%; top:3%; }
+  .scatter-resume-stag { width:28px; right:1%; bottom:2%; }
+  .scatter-writing-bee { width:28px; right:2%; top:1%; }
+  .scatter-contact-moth { width:30px; left:2%; bottom:3%; }
+  .note-moth { left:0; top:0; font-size:8px; }
+}
