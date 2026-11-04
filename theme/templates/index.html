@@ -104,11 +104,11 @@
  <img src="theme/img/bugs/leaf-bug.svg" class="field-bug bug-writing-leaf" alt="" aria-hidden="true" loading="lazy" decoding="async">
  <img src="theme/img/bugs/butterfly.svg" class="field-bug bug-writing-butterfly" alt="" aria-hidden="true" loading="lazy" decoding="async">
  <div class="section-heading"><div><h2>Words in the wild.</h2></div><span class="writing-count">{{ PORTFOLIO | length }} linked samples</span></div>
- <p class="writing-intro">A selection of my writing on open-source security, developer tools, and community events. Some pieces were published under subject-matter experts' names.</p>
+ <p class="writing-intro">Writing on open-source security, developer tools, product releases, and community events. Some pieces were published under subject-matter experts' names.</p>
  <div class="filter-bar" role="group" aria-label="Filter writing samples"><button type="button" class="filter active" data-filter="all" aria-pressed="true">All</button>{% for group in ["Customer education","Product & case studies","Technical writing","Community & events","Release notes"] %}<button class="filter" type="button" data-filter="{{ group }}" aria-pressed="false">{{ group }}</button>{% endfor %}</div>
  <div class="archive-header" aria-hidden="true"><span>COLLECTION / INDEX</span><span>SUBJECT / TITLE</span><span>PUBLICATION</span></div>
  <div class="writing-list">{% for item in PORTFOLIO %}<a class="writing-row" data-category="{{ item.category }}" href="{{ item.url }}" target="_blank" rel="noopener noreferrer"><span class="writing-category">{{ item.category }}</span><span class="writing-title">{{ item.title }}</span><span class="writing-publication">{{ item.publication }} ↗</span></a>{% endfor %}</div>
- <p class="archive-note">This is a curated archive, not everything I've ever written. Some publication URLs may change over time.</p>
+ <p class="archive-note">This archive includes the linked work from my writing samples list, plus newer pieces. Publication URLs may change over time.</p>
 </section>
 <section id="contact" class="contact-band">
 <img src="theme/img/bugs/dragonfly.svg" class="field-bug bug-contact-dragonfly" alt="" aria-hidden="true" loading="lazy" decoding="async"><div><h2>Good ideas are social insects.</h2><p>Working on a developer event, community project, or technical story? Get in touch.</p></div><div class="contact-actions"><a class="btn dark" href="https://www.linkedin.com/in/shelbyneubeck/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a><button type="button" class="btn secondary" data-contact-reveal>Reveal email address</button><small>Email appears only after you click. It isn't printed in the page source.</small></div></section>
