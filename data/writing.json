@@ -162,6 +162,90 @@
     "url": "https://blog.engflow.com/2025/05/29/london-build-meetup-recap---engflow-jane-street--tweag/"
   },
   {
+    "title": "Passbolt v3.9.0 — Bunny",
+    "category": "Release notes",
+    "publication": "Passbolt",
+    "url": "https://github.com/passbolt/passbolt_api/releases/tag/v3.9.0"
+  },
+  {
+    "title": "Passbolt v3.10.0 — Glue",
+    "category": "Release notes",
+    "publication": "Passbolt",
+    "url": "https://github.com/passbolt/passbolt_api/releases/tag/v3.10.0"
+  },
+  {
+    "title": "Passbolt v3.11.0 — Regular",
+    "category": "Release notes",
+    "publication": "Passbolt",
+    "url": "https://github.com/passbolt/passbolt_api/releases/tag/v3.11.0"
+  },
+  {
+    "title": "Passbolt v3.11.1 — Birdie",
+    "category": "Release notes",
+    "publication": "Passbolt",
+    "url": "https://github.com/passbolt/passbolt_api/releases/tag/v3.11.1"
+  },
+  {
+    "title": "Passbolt v3.12.0 — Introspective",
+    "category": "Release notes",
+    "publication": "Passbolt",
+    "url": "https://github.com/passbolt/passbolt_api/releases/tag/v3.12.0"
+  },
+  {
+    "title": "Passbolt v3.12.2 — Stille Einfuegen",
+    "category": "Release notes",
+    "publication": "Passbolt",
+    "url": "https://github.com/passbolt/passbolt_api/releases/tag/v3.12.2"
+  },
+  {
+    "title": "Passbolt v4.0.1 — Under Pressure",
+    "category": "Release notes",
+    "publication": "Passbolt",
+    "url": "https://github.com/passbolt/passbolt_api/releases/tag/v4.0.1"
+  },
+  {
+    "title": "Passbolt v4.0.2 — Creep",
+    "category": "Release notes",
+    "publication": "Passbolt",
+    "url": "https://github.com/passbolt/passbolt_api/releases/tag/v4.0.2"
+  },
+  {
+    "title": "Passbolt v4.1.0 — War Pig",
+    "category": "Release notes",
+    "publication": "Passbolt",
+    "url": "https://github.com/passbolt/passbolt_api/releases/tag/v4.1.0"
+  },
+  {
+    "title": "Passbolt v4.1.1 — Insane in the Brain",
+    "category": "Release notes",
+    "publication": "Passbolt",
+    "url": "https://github.com/passbolt/passbolt_api/releases/tag/v4.1.1"
+  },
+  {
+    "title": "Passbolt v4.1.2 — Bella ciao",
+    "category": "Release notes",
+    "publication": "Passbolt",
+    "url": "https://github.com/passbolt/passbolt_api/releases/tag/v4.1.2"
+  },
+  {
+    "title": "Passbolt v4.1.3 — Borders",
+    "category": "Release notes",
+    "publication": "Passbolt",
+    "url": "https://community.passbolt.com/t/new-release-v4-1-3-borders-pro/8168"
+  },
+  {
+    "title": "Passbolt v4.2.0 — The man who sold the world",
+    "category": "Release notes",
+    "publication": "Passbolt",
+    "url": "https://github.com/passbolt/passbolt_api/releases/tag/v4.2.0"
+  },
+  {
+    "title": "Passbolt v4.3.0 — No One Knows",
+    "category": "Release notes",
+    "publication": "Passbolt",
+    "url": "https://github.com/passbolt/passbolt_api/releases/tag/v4.3.0"
+  },
+  {
     "title": "Passbolt v4.0.0 Release",
     "category": "Release notes",
     "publication": "Passbolt",
@@ -190,5 +274,131 @@
     "category": "Customer education",
     "publication": "The Hacker News",
     "url": "https://thehackernews.com/2023/05/solving-your-teams-secure-collaboration.html"
+  },
+  {
+    "title": "Protect your privacy, passwords, and peace of mind with Passbolt | Paperjam News",
+    "category": "Customer education",
+    "publication": "Paperjam",
+    "url": "https://paperjam.lu/article/protect-your-privacy-and-passw"
+  },
+  {
+    "title": "Meet Passbolt’s Improved Grid Functionality",
+    "category": "Product & case studies",
+    "publication": "Passbolt",
+    "url": "https://www.passbolt.com/blog/meet-improved-grid"
+  },
+  {
+    "title": "Discover the passbolt windows desktop app: A developer-exclusive release",
+    "category": "Product & case studies",
+    "publication": "Passbolt",
+    "url": "https://www.passbolt.com/blog/windows-desktop-app-v0-2"
+  },
+  {
+    "title": "Release 3.10: MFA Policies And Self-Registration",
+    "category": "Product & case studies",
+    "publication": "Passbolt",
+    "url": "https://www.passbolt.com/blog/release-3-10-mfa-policies-and-self-registration"
+  },
+  {
+    "title": "Integrate OpenID for Single Sign-on",
+    "category": "Product & case studies",
+    "publication": "Passbolt",
+    "url": "https://www.passbolt.com/blog/openid-for-sso"
+  },
+  {
+    "title": "Achievement Unlocked: Passbolt joins FIDO Alliance",
+    "category": "Community & events",
+    "publication": "Passbolt",
+    "url": "https://www.passbolt.com/blog/passbolt-joins-fido-alliance"
+  },
+  {
+    "title": "2022: A Year In Review",
+    "category": "Community & events",
+    "publication": "Passbolt",
+    "url": "https://www.passbolt.com/blog/2022-a-year-in-review"
+  },
+  {
+    "title": "Passbolt · GitHub",
+    "category": "Technical writing",
+    "publication": "GitHub",
+    "url": "https://github.com/passbolt"
+  },
+  {
+    "title": "Passbolt & All Things Open: A Natural Fit",
+    "category": "Community & events",
+    "publication": "All Things Open",
+    "url": "https://2023.allthingsopen.org/passbolt-all-things-open-a-natural-fit/"
+  },
+  {
+    "title": "CakeFest Satellite Event: Bringing The Experience To Luxembourg",
+    "category": "Community & events",
+    "publication": "Silicon Luxembourg",
+    "url": "https://www.siliconluxembourg.lu/cakefest-satellite-event-bringing-the-experience-to-luxembourg/"
+  },
+  {
+    "title": "Get Immersed In PHP: CakeFest Event In Luxembourg",
+    "category": "Community & events",
+    "publication": "Silicon Luxembourg",
+    "url": "https://www.siliconluxembourg.lu/get-immersed-in-php-cakefest-event-in-luxembourg/"
+  },
+  {
+    "title": "A Sweet Slice Of Tech & PHP In Luxembourg: CakeFest Satellite Event",
+    "category": "Community & events",
+    "publication": "Silicon Luxembourg",
+    "url": "https://www.siliconluxembourg.lu/a-sweet-slice-of-tech-php-in-luxembourg-cakefest-satellite-event/"
+  },
+  {
+    "title": "CMake & Bazel Meetup in Munich - Recap",
+    "category": "Community & events",
+    "publication": "EngFlow",
+    "url": "https://blog.engflow.com/2024/08/29/munich-cmake--bazel-meetup---engflow--apexai/"
+  },
+  {
+    "title": "Recap of The CakeFest Satellite Event! 🍰 See what you missed last month! - Announcements - Passbolt community forum",
+    "category": "Community & events",
+    "publication": "Passbolt Community",
+    "url": "https://community.passbolt.com/t/recap-of-the-cakefest-satellite-event-see-what-you-missed-last-month/8720"
+  },
+  {
+    "title": "Week 2nd Oct - 6th Oct 2023 (Week 40) - In the news - Passbolt community forum",
+    "category": "Community & events",
+    "publication": "Passbolt Community",
+    "url": "https://community.passbolt.com/t/week-2nd-oct-6th-oct-2023-week-40/8600"
+  },
+  {
+    "title": "Recap of The September Community Call - Announcements",
+    "category": "Community & events",
+    "publication": "Passbolt Community",
+    "url": "https://community.passbolt.com/t/recap-of-the-september-community-call/8577"
+  },
+  {
+    "title": "Meet The Speakers - CakeFest Satellite Event - 30th September in Luxembourg 🇱🇺 - Announcements - Passbolt community forum",
+    "category": "Community & events",
+    "publication": "Passbolt Community",
+    "url": "https://community.passbolt.com/t/meet-the-speakers-cakefest-satellite-event-30th-september-in-luxembourg/8355"
+  },
+  {
+    "title": "Recap of The July Community Call",
+    "category": "Community & events",
+    "publication": "Passbolt Community",
+    "url": "https://community.passbolt.com/t/recap-of-the-july-community-call/7990"
+  },
+  {
+    "title": "Open Mic Recap - Community Call - June 1st, 2023 - Announcements",
+    "category": "Community & events",
+    "publication": "Passbolt Community",
+    "url": "https://community.passbolt.com/t/open-mic-recap-community-call-june-1st-2023/7669"
+  },
+  {
+    "title": "Week 15th May 2023 - 19th May,2023 - In the news - Passbolt community forum",
+    "category": "Community & events",
+    "publication": "Passbolt Community",
+    "url": "https://community.passbolt.com/t/week-15th-may-2023-19th-may-2023/7451"
+  },
+  {
+    "title": "Passbolt v4 beta testing is now open 🚀 - Announcements",
+    "category": "Community & events",
+    "publication": "Passbolt Community",
+    "url": "https://community.passbolt.com/t/passbolt-v4-beta-testing-is-now-open/7369"
   }
 ]

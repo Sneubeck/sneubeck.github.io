@@ -13,7 +13,6 @@ DEFAULT_PAGINATION = False
 RELATIVE_URLS = True
 DELETE_OUTPUT_DIRECTORY = True
 
-# The public portfolio is intentionally one page. Pelican stays in place for future blogging.
 DIRECT_TEMPLATES = ["index"]
 INDEX_SAVE_AS = "index.html"
 ARTICLE_SAVE_AS = ""
