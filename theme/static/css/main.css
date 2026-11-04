@@ -146,14 +146,6 @@ section[id]{scroll-margin-top:24px}
 .site-footer a{color:#854531;text-decoration:underline;text-underline-offset:3px}
 .site-footer a:hover{color:var(--ink)}
 
-/* Retained for possible future articles */
-.post{max-width:820px;margin:90px auto 120px;padding:0 25px}
-.post h1{margin:25px 0 45px}
-.post-body{font-size:18px;line-height:1.85}
-.post-body h2{margin-top:48px;font-size:38px}
-.post-body a{text-decoration:underline}
-.post-body img{max-width:100%;height:auto}
-
 /* Responsive */
 @media(max-width:900px){
  .hero{grid-template-columns:1fr;padding-top:65px}
