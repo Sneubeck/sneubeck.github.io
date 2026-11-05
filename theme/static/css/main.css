@@ -168,10 +168,8 @@ section[id] {
 }
 .intro {
   max-width:540px;
-  font-size:19px;
-  line-height:1.7;
-  padding-left:18px;
-  border-left:2px solid var(--rust)
+  font-size:17px;
+  line-height:1.65
 }
 .hero-photo-column {
   position:relative;
@@ -815,7 +813,7 @@ section[id] {
     padding:55px 6% 65px
   }
    .intro {
-    font-size:17px
+    font-size:16px
   }
    .hero-photo-column {
     width:min(100%,350px);
